@@ -154,24 +154,124 @@
 	font-family: 'open_sansbold';
 }
 .form__comments {
-	width: 700px;
+	max-width: 700px;
 	min-height: 430px;
 	background: #f5f5f5;
 	margin: 0 auto;
 	margin-bottom: 60px;
-	box-sizing: padding-box;
+	position: relative;
+	font-family: 'open_sanslight';
 }
-.form__comments--caption {
+.form__caption {
 	font-size: 49px;
 	font-family: 'open_sansbold';
 	padding-top: 42px;
 	padding-left: 68px;
 }
-.input {
-	width: 270px;
-	height: 50px;
-	border: none;
-	color: #9f9d9d;
+.form__input {
 	display: inline-block;
-	float: left;
+	margin-top: 16px;
+}
+.form__input:last-child {
+	margin-left: 17px;
+}
+.form__inputs {
+	padding-left: 68px;
+	margin-bottom: 18px;
+}
+.form__textarea {
+	padding-left: 69px;
+}
+.form__input--signature {
+	display: block;
+	color: black;
+	font-weight: 600;
+	color: #3f3d3d;
+	margin-bottom: 8px;
+}
+.form__input--field {
+	width: 270px;
+	height: 45px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+	padding-left: 12px;
+	box-sizing: border-box;
+}
+.form__input--field:focus, .form__input--message:focus {
+	border: 1px solid #f89513;
+}
+.form__input--message {
+	width: 560px;
+	height: 90px;
+	border-radius: 3px;
+	border: none;
+	box-sizing: border-box;
+	outline: none;
+	padding-left: 10px;
+	padding-top: 6px;
+	letter-spacing: .3px;
+	resize: none;
+}
+.form__radiobutton {
+	display: block;
+	padding-left: 70px;
+}
+.radiobutton__radio {
+	display: inline-block;
+}
+.radiobutton__button {
+	display: inline-block;
+	position: absolute;
+	right: 71px;
+	bottom: 49px; 
+}
+.radiobutton__radio--label {
+	margin-bottom: 8px;
+}
+.radio {
+	width: 20px;
+	height: 20px;
+	color: red;
+	background: red;
+	vertical-align: middle;
+	cursor: pointer;
+	position: relative;
+	cursor: pointer;
+	opacity: 0;
+	position: absolute;
+}
+.label--radio {
+	cursor: pointer;
+	display: inline-block;
+}
+.label--radio:last-child {
+	margin-left: 18px;
+}
+.radio__text {
+	display: inline-block;
+	vertical-align: 4px;
+}
+.radio:checked + .radio__styles {
+	background: url(../img/icons/checked.png) no-repeat;
+}
+.radio__styles {
+	background: url(../img/icons/no__checked.png)no-repeat;
+	display: inline-block;
+	z-index: 999;
+	width: 20px;
+	height: 20px;
+	padding-left: 4px;
+}
+.button {
+	width: 125px;
+	height: 45px;
+	color: white;
+	background: #1c1f1d;
+	border: none;
+	border-radius: 3px;
+	font-size: 12px;
+	font-family: 'open_sansbold';
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
 }

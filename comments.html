@@ -10,29 +10,31 @@
 	<link rel="stylesheet" href="css/comments.css">
 </head>
 <body>
-	<div class="wrapper">
+	<main class="wrapper clearfix">
 		<header class="header clearfix">
 				<div class="container clearfix">
-					<a href="index.html" href="index.html" class="logo logo-left">
+					<a href="index.html" class="logo logo-left">
 						афродита
 					</a>
-					<ul class="nav">
-						<li class="nav__item clearfix">
-							<a class="nav__link nav__link--main nav__link--1" href="index.html">
-								главная
-							</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link nav__link--2 nav__link--active-feed" href="comments.html">
-								отзывы
-							</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link nav__link--3 nav__link--service" href="services.html">
-								услуги
-							</a>
-						</li>
-					</ul>
+					<nav class="navigation clearfix">
+						<ul class="nav">
+							<li class="nav__item clearfix">
+								<a class="nav__link nav__link--main nav__link--1" href="main_page.html">
+									главная
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link nav__link--2 nav__link--active-feed" href="comments.html">
+									отзывы
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link nav__link--3 nav__link--service" href="services.html">
+									услуги
+								</a>
+							</li>
+						</ul>
+					</nav>
 				<div class="header__contacts">
 					<a class="contacts__phone" href="tel:+78000039210">
 						8 (800) 00-392-10
@@ -43,11 +45,11 @@
 				</div>
 			</div>
 		</header>
-		<div class="main">
+		<section class="main">
 			<div class="container">
 				<ul class="breadcrumps__list">
 					<li class="breadcrumps__item">
-						<a href="index.html" class="breadcrumps__item--link">Главная</a>
+						<a href="main_page.html" class="breadcrumps__item--link">Главная</a>
 					</li>
 					<li class="breadcrumps__item">
 						<a href="comments.html" class="breadcrumps__item--link breadcrumps__item--link-active">Отзывы</a>
@@ -129,31 +131,55 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="advertising">
+		</section>
+		<section class="advertising">
 			<div class="container">
 				<div class="contentbox">
 						Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов, тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий. <strong class="contentbox__strong">Ждем ваших заявок!</strong>
 				</div>
 			</div>
-		</div>
-		<div class="form">
+		</section>
+		<section class="form">
 			<div class="container clearfix">
-				<form class="form__comments" action="">
-					<h2 class="form__comments--caption">Оставить отзыв</h2>
+				<form class="form__comments" action="SeanJoun@gmail.com">
+					<h2 class="form__caption">Оставить отзыв</h2>
+					<div class="form__inputs">
+						<div class="form__input">
+							<label class="form__input--signature" for="name">Ваше имя</label>
+							<input class="form__input--field" type="text" id="name" placeholder="Андрей">
+						</div>
+						<div class="form__input">
+							<label class="form__input--signature" for="vk">Ссылка на профиль VK</label>
+							<input class="form__input--field" type="text" id="vk" placeholder="vk.com/example">
+						</div>
+					</div>
+					<div class="form__textarea">
+						<label class="form__input--signature" for="message">Текст отзыва</label>
+						<textarea class="form__input--message" placeholder="Мне понравилось" name="message" id="message"></textarea>
+					</div>
+					<div class="form__radiobutton">
+						<div class="radiobutton__radio">
+							<p class="radiobutton__radio--label">Отображать фото в отзыве?</p>
+							<label class="label--radio" for="radio1" name="radio"><input name="radio" id="radio1" class="radio" type="radio"><span class="radio__styles"></span><span class="radio__text">Да</span></label>
+							<label class="label--radio" for="radio2" name="radio"><input name="radio" id="radio2" class="radio" type="radio"><span class="radio__styles"></span><span class="radio__text">Нет</span></label>
+						</div>
+						<div class="radiobutton__button">
+							<button class="button">Отправить</button>
+						</div>
+					</div>
 				</form>
 			</div>
-		</div>
-	</div>
+		</section>
+	</main>
 	<footer class="footer">
 			<div class="container clearfix">
 				<div class="copyright">Сделано с любовью и страданием
 					<br> на курсе «HTML + CSS» в
-					<a class="copyright__loft" href="https://loftschool.com" class="link">LoftSchool.</a>
+					<a class="copyright__loft link" href="https://loftschool.com">LoftSchool.</a>
 					<br> Автор работы:
 					<strong class="copyright__author">Люлин Артём</strong>
 				</div>
-				<a href="#" class="logo logo-center">
+				<a href="index.html" class="logo logo--center">
 					Афродита
 				</a>
 				<div class="socials">

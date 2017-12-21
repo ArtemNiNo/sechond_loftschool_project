@@ -1,0 +1,35 @@
+.breadcrumps__list {
+	margin-top: 42px;
+	margin-left: 72px;
+}
+.breadcrumps__item {
+	list-style-type: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+.breadcrumps__item:after {
+	content: '/';
+	display: inline-block;
+	color: #666464;
+	opacity: .8;
+	font-family: 'open_sanslight_italic';
+}
+.breadcrumps__item:last-child:after {
+	display: none;
+}
+.breadcrumps__item--link {
+	font-family: 'open_sanslight_italic';
+	color: #f9aa42;
+}
+.breadcrumps__item--link-active {
+	text-decoration: none;
+	color: #666464;
+}
+.main__caption {
+	font-size: 49px;
+	font-family: 'open_sansbold';
+	margin-top: 18px; 
+	margin-left: 110px;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+}
