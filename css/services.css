@@ -33,3 +33,23 @@
 	text-transform: uppercase;
 	letter-spacing: 1.8px;
 }
+.service {
+	margin-left: 110px;
+	margin-top: 39px;
+}
+.service__list, .service__item {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+.service__item--list, .service__item--item {
+	display: block;
+}
+.service__item {
+	width: 270px;
+	min-height: 420px;
+	border: 1px solid gray;
+	margin-right: 38px;
+	margin-bottom: 60px;
+}
