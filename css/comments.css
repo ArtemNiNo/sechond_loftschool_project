@@ -127,10 +127,12 @@
 }
 .pagination__link:hover {
 	color: #f89513;
+	transition: 0.3s;
 }
 
 .pagination__link--disabled:hover {
 	color: rgba(39, 39, 62, 0.3);
+	transition: 0.3s;
 }
 .active {
 	color: #f89513;
@@ -202,6 +204,7 @@
 }
 .form__input--field:focus, .form__input--message:focus {
 	border: 1px solid #f89513;
+	box-sizing: border-box;
 }
 .form__input--message {
 	width: 560px;
