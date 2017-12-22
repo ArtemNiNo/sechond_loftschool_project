@@ -1,0 +1,41 @@
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/bg/bg.jpg);
+	position: relative;
+}
+.container {
+	width: 700px;
+	height: 700px;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	margin: 0 auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.container__link {
+	display: block;
+}
+.container__img {
+	margin-bottom: 40px;
+	margin-top: 200px;
+}
+.container__link--text {
+	display: inline-block;
+	width: 172px;
+	height: 45px;
+	background: orange;
+	padding-top: 16px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	font-family: 'open_sansbold';
+	font-size: 14px;
+}
+.container__link--text:hover {
+	background: #131415;
+}
