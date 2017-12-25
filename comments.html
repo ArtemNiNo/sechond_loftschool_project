@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/comments.css">
 </head>
 <body>
-	<main class="wrapper clearfix">
+	<main class="wrapper">
 		<header class="header clearfix">
 				<div class="container clearfix">
 					<a href="index.html" class="logo logo-left">
@@ -36,12 +36,18 @@
 							</li>
 						</ul>
 				<div class="header__contacts">
-					<a class="contacts__phone" href="tel:+78000039210">
+					<a class="header__contacts-phone" href="tel:+78000039210">
 						8 (800) 00-392-10
 					</a>
-					<a href="#" class="contacts_schedule">
-						График работы
-					</a>
+					<div class="worck-time">
+						<span class="schedule">
+							График работы
+							<ul class="dropdown">
+								<li class="dropdown__item">пн-вс: 09:00-20:00</li>
+								<li class="dropdown__item dropdown__item--lanch">обед: 14:00-14:30</li>
+							</ul>
+						</span>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -55,7 +61,7 @@
 						<a href="comments.html" class="breadcrumps__item--link breadcrumps__item--link-active">Отзывы</a>
 					</li>
 				</ul>
-				<div class="main__caption">отзывы</div>
+				<h1 class="main__caption">отзывы</h1>
 				<ul class="comments">
 					<li class="comment">
 						<div class="comment__avatar" style="background-image: url(img/content/av3.jpg);">
@@ -98,44 +104,41 @@
 						</div>
 					</li>					
 				</ul>
-				<div class="pagination">
-					<div class="pagination__block--1">Страница 1 из 7</div>
-					<ul class="pagination__block">
-						<li class="pagination__item">
-							<a href="" class="pagination__link pagination__link--disabled"><img class="pagination__link--left" src="img/icons/left.png" alt="img"></a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link pagination__link--current active">1</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link">2</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link">3</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link">4</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link">5</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link">6</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link">7</a>
-						</li>
-						<li class="pagination__item">
-							<a href="#" class="pagination__link"><img class="pagination__link--right" src="img/icons/right.png" alt="img"></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="advertising">
-				<div class="container">
-					<div class="contentbox">
-						Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов, тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий. <strong class="contentbox__strong">Ждем ваших заявок!</strong>
+					<div class="pagination">
+						<div class="pagination__block--1">Страница 1 из 7</div>
+						<a href="" class="pagination__link-back pagination__link--disabled">
+							<img src="img/icons/left.png" alt="img">
+						</a>
+						<ul class="pagination__block">
+							<li class="pagination__item">
+								<a href="#" class="pagination__link pagination__link--current active">1</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">2</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">3</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">4</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">5</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">6</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__link">7</a>
+							</li>
+						</ul>
+						<a href="#" class="pagination__link-front"><img src="img/icons/right.png" alt="img"></a>
 					</div>
+		</section>
+		<section class="advertising">
+			<div class="container">
+				<div class="contentbox">
+					Помимо перечисленных услуг, мы предоставляем консультации профессиональных диетологов, тренеров, психологов. Также есть кабинет массажа, зал спа рядом с бассейном и возможность арендовать центр для проведения массовых мероприятий. <strong class="contentbox__strong">Ждем ваших заявок!</strong>
 				</div>
 			</div>
 		</section>
@@ -160,7 +163,7 @@
 					<div class="form__radiobutton">
 						<div class="radiobutton__radio">
 							<p class="radiobutton__radio--label">Отображать фото в отзыве?</p>
-							<label class="label--radio" for="radio1" name="radio"><input name="radio" id="radio1" class="radio" type="radio"><span class="radio__styles"></span><span class="radio__text">Да</span></label>
+							<label class="label--radio" for="radio1" name="radio"><input checked="checked" name="radio" id="radio1" class="radio" type="radio"><span class="radio__styles"></span><span class="radio__text">Да</span></label>
 							<label class="label--radio" for="radio2" name="radio"><input name="radio" id="radio2" class="radio" type="radio"><span class="radio__styles"></span><span class="radio__text">Нет</span></label>
 						</div>
 						<div class="radiobutton__button">
@@ -204,5 +207,6 @@
 					</div>
 				</div>
 		</footer>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

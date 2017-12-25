@@ -38,4 +38,5 @@
 }
 .container__link--text:hover {
 	background: #131415;
+	transition: .3s;
 }

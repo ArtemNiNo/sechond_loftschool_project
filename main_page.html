@@ -11,13 +11,13 @@
 	<link rel="stylesheet" href="css/mainpage.css">
 </head>
 <body>
-	<main class="wrapper clearfix">
+	<main class="wrapper">
 		<header class="header clearfix">
 				<div class="container clearfix">
 					<a href="index.html" class="logo logo-left">
 						афродита
 					</a>
-						<ul class="nav">
+						<ul class="nav clearfix">
 							<li class="nav__item clearfix">
 								<a class="nav__link nav__link--1 nav__link--active-main" href="main_page.html">
 									главная
@@ -35,20 +35,26 @@
 							</li>
 						</ul>
 				<div class="header__contacts">
-					<a class="contacts__phone" href="tel:+78000039210">
+					<a class="header__contacts-phone" href="tel:+78000039210">
 						8 (800) 00-392-10
 					</a>
-					<a href="#" class="contacts_schedule">
-						График работы
-					</a>
+					<div class="worck-time">
+						<span class="schedule">
+							График работы
+							<ul class="dropdown">
+								<li class="dropdown__item">пн-вс: 09:00-20:00</li>
+								<li class="dropdown__item dropdown__item--lanch">обед: 14:00-14:30</li>
+							</ul>
+						</span>
+					</div>
 				</div>
 			</div>
 		</header>
 		<section class="main">
 			<div class="banner">
 				<div class="container">
-					<div class="banner__image">
-						<img src="img/bg/image.png" alt="baner" class="banner__image hidden">
+					<div class="banner__container">
+						<img src="img/bg/image.png" alt="baner" class="banner__container-image">
 					</div>
 				</div>
 				</div>
@@ -135,7 +141,7 @@
 							</div>
 							<ul class="news__sidebar-items">
 								<a href="#"><li class="news__sidebar-item news__sidebar-item--first" style="background: url(img/content/Layer10.jpg) center no-repeat">
-										<img class="news__sidebar-img invisible" src="img/content/Layer10.jpg" alt="img">
+										<img class="news__sidebar-img" src="img/content/Layer10.jpg" alt="img">
 								</li></a>
 								<a href="#"><li class="news__sidebar-item news__sidebar-item--second" style="background: url(img/content/Layer11.jpg) center no-repeat">
 										<img class="news__sidebar-img invisible" src="img/content/Layer11.jpg" alt="img">
@@ -148,10 +154,10 @@
 					</article>
 					<div class="pagination">
 						<div class="pagination__block--1">Страница 1 из 7</div>
+						<a href="" class="pagination__link-back pagination__link--disabled">
+							<img src="img/icons/left.png" alt="img">
+						</a>
 						<ul class="pagination__block">
-							<li class="pagination__item">
-								<a href="" class="pagination__link pagination__link--disabled"><img src="img/icons/left.png" alt="img"></a>
-							</li>
 							<li class="pagination__item">
 								<a href="#" class="pagination__link pagination__link--current active">1</a>
 							</li>
@@ -173,10 +179,8 @@
 							<li class="pagination__item">
 								<a href="#" class="pagination__link">7</a>
 							</li>
-							<li class="pagination__item">
-								<a href="#" class="pagination__link"><img src="img/icons/right.png" alt="img"></a>
-							</li>
 						</ul>
+						<a href="#" class="pagination__link-front"><img src="img/icons/right.png" alt="img"></a>
 					</div>
 				</div>
 		</section>

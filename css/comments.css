@@ -1,6 +1,7 @@
-.breadcrumps__list {
-	margin-top: 42px;
-	margin-left: 72px;
+.main {
+	padding-top: 42px;
+	padding-left: 110px;
+	padding-bottom: 61px;
 }
 .breadcrumps__item {
 	list-style-type: none;
@@ -29,13 +30,11 @@
 	font-size: 49px;
 	font-family: 'open_sansbold';
 	margin-top: 18px; 
-	margin-left: 110px;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
 }
 .comments {
 	list-style-type: none;
-	margin-left: 70px;
 	margin-top: 8px;
 }
 .comment {
@@ -90,10 +89,8 @@
 	font-size: 14px;
 	font-weight: 300;
 	color: #656464;
-	margin-left: 349px;
-	margin-top: 15px;
-	margin-bottom: 60px;
-
+	margin-left: 239px;
+	margin-top: 16px;
 }
 
 .pagination__block, .pagination__block--1, .pagination__item {
@@ -101,6 +98,7 @@
 }
 .pagination__block--1 {
 	margin-left: 30px;
+	margin-right: 16px;
 }
 .pagination__block {
 	padding-left: 10px;
@@ -114,8 +112,11 @@
 	text-align: center;
 	text-decoration: none;
 	line-height: 2;
-	margin-left: .5px;
+	margin-left: .7px;
 
+}
+.pagination__link-front {
+	margin-left: 8px;
 }
 
 .pagination__link--current {
@@ -129,6 +130,9 @@
 	color: #f89513;
 	transition: 0.3s;
 }
+.pagination__link-front, .pagination__link-back {
+	text-decoration: none;
+}
 
 .pagination__link--disabled:hover {
 	color: rgba(39, 39, 62, 0.3);
@@ -137,7 +141,9 @@
 .active {
 	color: #f89513;
 }
+
 .advertising {
+	width: 100%;
 	background: #131415;
 	text-align: left;
 	color: white;
@@ -159,39 +165,36 @@
 .form__comments {
 	border-radius: 3px;
 	max-width: 700px;
-	min-height: 430px;
 	background: #f5f5f5;
 	margin: 0 auto;
 	margin-bottom: 60px;
 	position: relative;
 	font-family: 'open_sanslight';
+	padding: 42px 70px 50px 70px;
+	box-sizing: border-box;
 }
 .form__caption {
 	font-size: 49px;
 	font-family: 'open_sansbold';
-	padding-top: 42px;
-	padding-left: 68px;
 }
 .form__input {
 	display: inline-block;
-	margin-top: 16px;
+	margin-top: 16px;;
 }
-.form__input:last-child {
-	margin-left: 17px;
+.form__input:first-child {
+	margin-right: 16px;
 }
 .form__inputs {
-	padding-left: 68px;
 	margin-bottom: 18px;
 }
 .form__textarea {
-	padding-left: 69px;
 }
 .form__input--signature {
 	display: block;
 	color: black;
 	font-weight: 600;
 	color: #3f3d3d;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 }
 .form__input--field {
 	width: 270px;
@@ -200,6 +203,7 @@
 	border-radius: 3px;
 	outline: 0;
 	padding-left: 12px;
+	padding-right: 12px;
 	box-sizing: border-box;
 }
 .form__input--field:focus, .form__input--message:focus {
@@ -214,25 +218,26 @@
 	box-sizing: border-box;
 	outline: none;
 	padding-left: 10px;
-	padding-top: 6px;
+	padding-top: 8px;
+	padding-bottom: 4px;
+	padding-right: 10px;
 	letter-spacing: .3px;
 	resize: none;
+	color: #221f1f;
 }
 .form__radiobutton {
 	display: block;
-	padding-left: 70px;
 }
 .radiobutton__radio {
 	display: inline-block;
 }
 .radiobutton__button {
-	display: inline-block;
-	position: absolute;
-	right: 71px;
-	bottom: 49px; 
+	display: inline-block; 
+	float: right;
+	margin-top: 18px;
 }
 .radiobutton__radio--label {
-	margin-bottom: 8px;
+	margin-bottom: 9px;
 }
 .radio {
 	width: 20px;
@@ -257,8 +262,11 @@
 	display: inline-block;
 	vertical-align: 4px;
 }
-.radio:checked + .radio__styles {
+.radio:checked ~ .radio__styles {
 	background: url(../img/icons/checked.png) no-repeat;
+}
+.radio:checked ~ .radio__text {
+	color: #f89513;
 }
 .radio__styles {
 	background: url(../img/icons/no__checked.png)no-repeat;
