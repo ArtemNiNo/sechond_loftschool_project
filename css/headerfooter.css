@@ -218,11 +218,11 @@ img {
 }
 .schedule:hover{
 	color: #b9b9b9;
-	transition: 0.3;
+	transition: 0.3s;
 }
 .schedule:hover  .dropdown{
 	opacity: 1;
-	transition: 0.3;
+	transition: 0.3s;
 }
 .dropdown {
 	box-sizing: border-box;
