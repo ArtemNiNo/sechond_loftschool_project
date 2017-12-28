@@ -25,6 +25,7 @@
 .breadcrumps__item--link-active {
 	text-decoration: none;
 	color: #666464;
+	pointer-events: none;
 }
 .main__caption {
 	font-size: 49px;
@@ -167,11 +168,13 @@
 	max-width: 700px;
 	background: #f5f5f5;
 	margin: 0 auto;
-	margin-bottom: 60px;
 	position: relative;
 	font-family: 'open_sanslight';
 	padding: 42px 70px 50px 70px;
 	box-sizing: border-box;
+}
+.form {
+	margin-bottom: 60px;
 }
 .form__caption {
 	font-size: 49px;
@@ -287,6 +290,7 @@
 	font-family: 'open_sansbold';
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
+	cursor: pointer;
 }
 .button:hover {
 	background: #f89513;

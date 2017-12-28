@@ -96,7 +96,6 @@ img {
 }
 .nav__link--main {
     background: url('../img/icons/nav_sprite.png') no-repeat;
-    height: 40px;
     background-position: -96px 0;
     padding-top: 5px;  
 }
@@ -105,7 +104,6 @@ img {
     background: url('../img/icons/nav_sprite.png') no-repeat;
     color: #f89513;
     transition: 0s;
-    height: 40px;
     background-position: -93px -100px;
     padding-top: 5px;
 }
@@ -113,7 +111,6 @@ img {
 .nav__link--main:active {
     background: url('../img/icons/nav_sprite.png') no-repeat;
     color: #f89513;
-    height: 40px;
     background-position: -93px -100px;
     padding-top: 5px;
 }
@@ -121,75 +118,75 @@ img {
 .nav__link--active-main {
     background: url('../img/icons/nav_sprite.png') no-repeat;
     color: #f89513;
-    height: 40px;
     background-position: -96px -100px;
     padding-top: 5px;
+    padding-bottom: 28px;
 }
 
 .nav__link--feed {
     background: url('../img/icons/nav_sprite.png') no-repeat;
-    height: 40px;
     padding-top: 5px;
+    padding-bottom: 28px;
 }
 
 .nav__link--feed:hover {
     background: url('../img/icons/nav_sprite.png') no-repeat;
     color: #f89513;
-    height: 40px;
     padding-top: 5px;
     background-position: 0 -100px;
+    padding-bottom: 28px;
 }
 
 .nav__link--feed:active {
     background: url('../img/icons/nav_sprite.png') no-repeat;
     color: #f89513;
-    height: 40px;
     padding-top: 5px;
     background-position: 0 -100px;
+    padding-bottom: 28px;
 }
 
 .nav__link--active-feed {
     background: url('../img/icons/nav_sprite.png') no-repeat;
     color: #f89513;
-    height: 40px;
     padding-top: 5px;
     background-position: 0 -100px;
+    padding-bottom: 28px;
 }
 
 .nav__link--service {
     background: url('../img/icons/nav_sprite.png') no-repeat;
-    height: 40px;
     padding-top: 5px;
     background-position: -177px 3px;
     background-size: 200px;
+    padding-bottom: 28px;
 }
 
 .nav__link--service:hover {
     background: url('../img/icons/nav_sprite.png') no-repeat;
     background-position: -200px -100px;
-    height: 40px;
     padding-top: 5px;
     color: #f89513;
     background-position: -180px -86px;
     background-size: 200px;
+    padding-bottom: 28px;
 }
 
 .nav__link--service:active {
     background: url('../img/icons/nav_sprite.png') no-repeat;
-    height: 40px;
     padding-top: 5px;
     color: #f89513;
     background-position: -180px -86px;
     background-size: 200px;
+    padding-bottom: 28px;
 }
 
 .nav__link--active-service {
     background: url('../img/icons/nav_sprite.png') no-repeat;
-    height: 40px;
     padding-top: 5px;
     color: #f89513;
     background-position: -180px -86px;
     background-size: 200px;
+    padding-bottom: 28px;
 }
 .header__contacts {
 	font-weight: 700;
@@ -227,8 +224,7 @@ img {
 .dropdown {
 	box-sizing: border-box;
 	border-radius: 5px;
-	width: 160px;
-	height: 70px;
+	padding: 17.5px 15px 17.5px 15px;
 	list-style: none;
 	box-shadow: 0 0 10px gray;
 	text-align: center;
@@ -285,10 +281,9 @@ img {
 }
 
 .logo--center {
-	width: 30%;
 	float: left;
 	text-align: center;
-	margin-left: 35px
+	margin-left: 124px
 }
 .copyright {
 	font-weight: 300;

@@ -1,9 +1,5 @@
 .main {
-	padding-top: 42px;
 	padding-left: 110px;
-}
-.breadcrumps__list {
-
 }
 .breadcrumps__item {
 	list-style-type: none;
@@ -27,6 +23,7 @@
 .breadcrumps__item--link-active {
 	text-decoration: none;
 	color: #666464;
+	pointer-events: none;
 }
 .main__caption {
 	font-size: 49px;
@@ -34,6 +31,7 @@
 	margin-top: 18px; 
 	text-transform: uppercase;
 	letter-spacing: 1.8px;
+	margin-bottom: 42px;
 }
 .service {
 	margin-top: 39px;
@@ -46,18 +44,19 @@
 	display: block;
 }
 .service__item {
-	width: 290px;
+	width: 250px;
 	margin-bottom: 40px;
 	border-radius: 3px;
 	position: relative;
 	float: left;
+	margin-right: 40px;
 }
 .service__item:nth-child(2) {
-	margin-right: 30px;
+	margin-right: 70px;
 	margin-left: 20px;
 }
 .service__item:nth-child(5) {
-	margin-right: 30px;
+	margin-right: 70px;
 	margin-left: 20px;
 	}
 .service__item:nth-child(4) {
@@ -120,9 +119,7 @@
 	margin-top: 15px;
 }
 .partners__list {
-	margin-top: 76px;
-	margin-left: 54px;
-	padding-bottom: 33px;
+	margin: 76px 0 33px 54px;
 }
 .partners__list--row {
 	display: inline-block;

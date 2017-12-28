@@ -27,11 +27,10 @@ img {
 	text-align: center;
 }
 .banner__container{
-	padding-top: 40px;
+	padding-top: 80px;
 	background: url(../img/bg/image.png) center 80px no-repeat;
 }
 .banner__container-image{
-	padding-top: 40px;
 	visibility: hidden;
 }
 
@@ -143,7 +142,7 @@ img {
 	color: black;
 }
 .news__container {
-	padding-top: 60px;
+	margin-top: 60px;
 }
 .news__list {
 	list-style: none;
@@ -169,7 +168,7 @@ img {
 }
 .news__card-section--text {
 	width: 650px;
-	padding-left: 15px;
+	margin-left: 15px;
 }
 .news__text--date {
 	color: #656464;
