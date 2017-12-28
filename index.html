@@ -2,20 +2,109 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Афродита</title>
-	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/logo.png">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normolize.css">
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">
+	<title>Bakery</title>
 </head>
 <body>
-	<div class="wrapper">
-		<div class="container">
-				<img class="animated bounceIn container__img" src="img/icons/logo.png" alt="img">
-				<a href="main_page.html" class="animated bounceIn container__link"><div class="container__text">перейти на сайт</div></a>
-		</div>
-	</div>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<main class="wrapper">
+		<section class="top">
+			<header class="header clearfix">
+			<div class="filter"></div>
+				<div class="container">
+					<div class="header__logo">Gustoso</div>
+					<nav class="navigation">
+						<ul class="navigation__list">
+							<li class="navigation__item"><a class="navigation__link" href="#">welcome</a></li>
+							<li class="navigation__item"><a class="navigation__link navigation__link--til" href="#">menu</a></li>
+							<li class="navigation__item"><a class="navigation__link navigation__link--til" href="#">reservations</a></li>
+							<li class="navigation__item"><a class="navigation__link navigation__link--til" href="#">news</a></li>
+							<li class="navigation__item"><a class="navigation__link navigation__link--til" href="#">contact</a></li>
+						</ul>
+					</nav>
+					<ul class="socials">
+						<li class="socials__item">
+							<a href="#" class="socials__link"><img src="img/icons/tw.png" alt="i"></a>
+						</li>
+						<li class="socials__item">
+							<a href="#" class="socials__link"><img src="img/icons/fb.png" alt="i"></a>
+						</li>
+						<li class="socials__item">
+							<a href="#" class="socials__link"><img src="img/icons/in.png" alt="i"></a>
+						</li>
+					</ul>
+				</div>
+			</header>
+				<section class="top__content">
+					<div class="container">
+						<h2 class="top__caption">Pastry with love <div class="dot"></div></h2>
+						<div class="top__text">We’re bringing you fresh ingredients every<br> day in ways you can’t resist.</div>
+						<a href="#" class="top__link">
+							<div class="link__menu"><div class="filter__link"></div>our menu</div>
+						</a>
+						<div class="top__pie">
+							<div class="pie__circle">
+							</div>
+						</div>
+					</div>
+				</section>
+		</section>
+		<section class="chef clearfix">
+			<div class="container clearfix">
+				<article class="chef__cook">
+					<h2 class="cook__coocker">Art of cakes</h2>
+					<h3 class="cook__caption">we create delicious memories</h3>
+					<div class="cook__text">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.
+					</div>
+					<h3 class="cook__name">Chef Cook</h3>
+					<ul class="cook__list">
+						<li class="cook__item">Benito</li>
+						<li class="cook__item"><div class="cook__img"></div></li>
+						<li class="cook__item">Gaspare</li>
+					</ul>
+					<div class="cook_bl">Unique creations for uniqueoccasions.
+					</div>
+				</article>
+				<section class="deserts">
+					<ul class="deserts__list">
+						<li class="deserts__item">
+							<div class="deserts__wrapper" style="background-image: url(img/content/muka.jpg);">
+								<img src="img/content/muka.jpg" alt="img" class="deserts__img">
+								<div class="wrap"></div>
+							</div>
+						</li>
+						<li class="deserts__item">
+							<div class="deserts__wrapper" style="background-image: url(img/content/egg.jpg);">
+								<img src="img/content/egg.jpg" alt="img" class="deserts__img">
+								<div class="wrap"></div>
+							</div>
+						</li>
+						<li class="deserts__item">
+							<div class="deserts__wrapper" style="background-image: url(img/content/tort.jpg); ">
+								<img src="img/content/tort.jpg" alt="img" class="deserts__img">
+								<div class="wrap"></div>
+							</div>
+						</li>
+						<li class="deserts__item">
+							<div class="deserts__wrapper" style="background-image: url(img/content/keks.jpg);">
+								<img src="img/content/keks.jpg" alt="img" class="deserts__img">
+								<div class="wrap"></div>
+							</div>
+						</li>
+					</ul>
+					<div class="deserts__midl"><div class="deserts__midl--text">tastes so<br> good!</div></div>
+				</section>
+			</div>
+			</div>
+		</section>
+		<section class="pancakes"></section>
+		<section class="breakfast"></section>
+		<section class="bottom"></section>
+	</main>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

@@ -1,0 +1,355 @@
+body, html {
+	height: 100%;
+	font-family: 'Alegreya', serif;
+}
+ul, li, h1, h2, h3, h4, h5, h6 {
+	margin: 0 auto;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.wrapper {
+	min-width: 1260px;
+	width: 100%;
+	min-height: 100%;
+}
+.container {
+	width: 1260px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+/*--------------------------------------------------*/
+
+
+
+
+.top {
+	width: 100%;
+	background: url(../img/bg/top-fon.jpg) center no-repeat;
+	background-size: cover;
+	background-position: 50% 30%; 
+	position: relative;
+}
+.header {
+	width: 100%;
+	padding: 20px 0 20px 0;
+	position: relative;
+	z-index: 2;
+}
+.filter {
+	width: 100%;
+	position: absolute;
+	background: #56534c;
+	z-index: -1;
+	height: 70px;
+	top: 0;
+	opacity: .53;
+}
+.socials__item {
+	display: inline-block;
+}
+.navigation__item, .navigation__list, .socials, .header__logo, .navigation {
+	display: inline-block;
+}
+.header__logo {
+	float: left;
+	font-size: 32px;
+	font-family: 'scriptinaregular';
+	color: #f5f5f5;
+	letter-spacing: 8px;
+	vertical-align: middle;
+	line-height: .7;
+	margin-right: 99px;
+}
+.navigation {
+	float: left;
+	text-align: center;
+}
+.navigation__item {
+	color: #f5f5f5;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 4px;
+	padding-left: 79px;
+	margin-top: 8px;
+	position: relative;
+}
+.navigation__link--til:before {
+	content: '~';
+	position: absolute;
+	left: 35px
+}
+.navigation__item:first-child {
+	padding-left: 0;
+}
+.navigation__link {
+	color: #f5f5f5;
+	text-decoration: none;
+	font-weight: 600;
+}
+.navigation__link:hover {
+	color: #ffffff;
+	text-shadow: 3px 3px 8px black;
+	font-weight: 900;
+	transition: .2s;
+}
+.socials {
+	float: right;
+}
+.socials__item {
+	margin-left: 28px;
+	margin-top: 8px;
+}
+.top__content {
+	padding: 200px 0 208px 0;
+	text-align: center;
+}
+.top__caption {
+	font-size: 92px;
+	color: white;
+	font-family: 'Playfair Display', serif;
+	padding-bottom: 71px;
+	background: url(../img/icons/line.png) no-repeat;
+	background-position: 49% 100%;
+	display: block;
+	letter-spacing: 8px;
+	margin-left: 10px;
+	margin-bottom: 56px;
+	text-shadow: 0 1px 1px black;
+}
+.dot {
+	width: 1px;
+	height: 1px;
+	background: black;
+	box-shadow: 0 0 3000px black;
+	position: absolute;
+}
+.top__text {
+	color: #ffffff;
+	font-size: 24px;
+	font-family: 'proxima_novaregular';
+	font-weight: 100;
+	letter-spacing: 2.4px;
+	line-height: 1.6;
+	text-shadow: 0 1px 1px black;
+}
+.top__link {
+		text-decoration: none;
+		display: block;
+		position: relative;
+}
+.filter__link {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	top: 0;
+	z-index: -1;
+	background: #56534c;
+}
+.filter__link:hover {
+	background: black;
+	transition: .3s;
+}
+.top__link:hover .filter__link{
+	background: black;
+	transition: .3s;
+}
+.link__menu {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 62px;
+	letter-spacing: 4px;
+	font-size: 14px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	position: relative;
+	z-index: 1;
+	border: 1px dashed #9e9c93;
+}
+.top__pie {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -265px;
+	left: 575px;
+	background-image: url(../img/icons/circle.png);
+	background-size: cover;
+	z-index: 2;
+}
+.pie__circle {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: white center no-repeat;
+	position: absolute;
+	top: 15.5px;
+	left: 15.5px;
+	background-image: url(../img/icons/pie.png);
+	z-index: 2;
+}
+
+
+/*-------------------------------*/
+/*-------------CHEF--------------*/
+/*--------------------------------*/
+
+
+
+.chef {
+	padding: 96px 0 120px 0;
+	position: relative;
+	background: url(../img/bg/bg2.jpg);
+	background-size: cover;
+	z-index: 1;
+}
+.chef__cook {
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+.deserts {
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	margin-top: 24px;
+}
+.deserts__list {
+	margin-left: 7px;
+}
+.deserts__item {
+	width: 295px;
+	height: 250px;
+	margin-bottom: 20px;
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+.deserts__item:nth-child(even) {
+	margin-right: 0;
+}
+.deserts__wrapper {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
+.deserts__img {
+	width: 295px;
+	height: 250px;
+	visibility: hidden;
+}
+.wrap {
+	position: absolute;
+	width: 275px; 
+	height: 230px;
+	border: 5px solid white;
+	top: 4px;
+	left: 4px;
+}
+.deserts__midl {
+	width: 274px;
+	height: 274px;
+	border-radius: 50%;
+	position: absolute;
+	top: 138px;
+	left: 176px;
+	background-image: url(../img/icons/circle2.png);
+	background-size: cover;
+	opacity: .9;
+	text-align: center;
+	vertical-align: middle;
+}
+.deserts__midl--text {
+	display: inline-block;
+	margin-top: 94px;
+	margin-left: 4px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #c9b176;
+	letter-spacing: 1.8px;
+}
+.chef__cook {
+	text-align: center;
+}
+.cook__coocker {
+	font-weight: 900;
+	font-size: 48px;
+	color: #56534c;
+	letter-spacing: 2px;
+}
+.cook__caption {
+	color: #a47d5e;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 6px;
+	letter-spacing: 1.4px;
+}
+.cook__text {
+	font-size: 14px;
+	font-family: 'proxima_novaregular';
+	font-weight: 900;
+	margin-top: 60px;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 1.8;
+	letter-spacing: 1px;
+	color: #56534c;
+}
+.cook__name {
+	margin-top: 32px;
+	font-size: 24px;
+	color: #56534c;
+	letter-spacing: 1px;
+}
+.cook__list {
+	margin-top: 64px;
+}
+.cook__item {
+	display: inline-block;
+	font-size: 24px;
+	color: #56534c;
+	border-bottom: 1px solid #d7d5ca;
+	border-top: 1px solid #d7d5ca;
+	width: 113px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	letter-spacing: 2px;
+	margin-right: 8px;
+	margin-left: 8px;
+	position: relative;
+}
+.cook__item:nth-child(2) {
+	border: none;
+}
+.cook__img {
+	width: 110px;
+	height: 110px;
+	background-image: url(../img/content/cooker.jpg);
+	background-size: 280%;
+	background-position: 28% 6%;
+	display: inline-block;
+	position: absolute;
+	top: -30px;
+	left: 2px;
+	border-radius: 50%;
+}
+.cook_bl {
+	margin-top: 100px;
+}
