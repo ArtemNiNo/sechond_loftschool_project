@@ -330,7 +330,7 @@ img {
 	width: 113px;
 	padding-top: 16px;
 	padding-bottom: 16px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	margin-right: 8px;
 	margin-left: 8px;
 	position: relative;
@@ -339,17 +339,59 @@ img {
 	border: none;
 }
 .cook__img {
-	width: 110px;
-	height: 110px;
+	width: 100px;
+	height: 100px;
 	background-image: url(../img/content/cooker.jpg);
 	background-size: 280%;
 	background-position: 28% 6%;
 	display: inline-block;
 	position: absolute;
-	top: -30px;
-	left: 2px;
+	top: -25px;
+	left: 8px;
 	border-radius: 50%;
 }
 .cook_bl {
-	margin-top: 100px;
+	font-family: 'scriptinaregular';
+	font-size: 24px;
+	color: #a47d5e;
+	padding-top: 10px;
+	padding-left: 100px;
+	padding-right: 100px;
+	letter-spacing: .3px;
+	position: relative;
+	margin-top: 50px;
+	line-height: 1.2;
+}
+.cook__bl-text1 {
+	display: block;
+	font-size: 46px;
+	letter-spacing: -3px;
+	font-weight: 900;
+	text-align: left;
+	position: absolute;
+	top: -25px;
+	left: 110px;
+
+}
+.cook__bl-text2 {
+	display: block;
+	-webkit-transform: rotateY(180deg);
+	text-align: left;
+	font-size: 46px;
+	letter-spacing: -3px;
+	font-weight: 900;
+	position: absolute;
+	right: 112px;
+	bottom: -44px;
+}
+
+
+/*-----------------------------------------*/
+/*-------------PANCAKES--------------------*/
+/*-----------------------------------------*/
+.pancakes {
+	padding-top: 140px;
+	padding-bottom: 110px;
+	background: url(../img/bg/bg3.jpg) center no-repeat;
+	background-size: cover;
 }
