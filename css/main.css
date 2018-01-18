@@ -6,6 +6,9 @@ html, body, ul, li {
 	padding: 0;
 	margin: 0;
 }
+html {
+ scroll-behavior:  smooth;
+}
 .header {
 	width: 100%;
 	position: absolute;
@@ -59,7 +62,7 @@ html, body, ul, li {
 .section {
 	height: 100vh;
 }
-.section:nth-child(2) {
+.section--one {
 	background: url(../img/bg/bg1.jpg);
 	background-size: cover;
 }
@@ -116,6 +119,7 @@ html, body, ul, li {
 	position: fixed;
 	right: 20px;
 	top: 100px;
+	z-index: 9999999;
 }
 .pagination__item {
 	margin-bottom: 1px;
@@ -198,32 +202,36 @@ html, body, ul, li {
 	margin: 0 auto;
 	flex-wrap: wrap;
 	flex-direction: column;
-	justify-content: center;
 }
 .section--three__comments {
+	position: relative;
+	padding-top: 5%;
+	padding-left: 3%;
+	padding-right: 3%;
+	box-sizing: border-box;
 	background: gray;
 	width: 25%;
 	height: 50%;
-	filter: grayscale(100%);
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: flex-start;
+	filter: grayscale(100%);
 }
 .section--three__comments:nth-child(1) {
-	background: url(../img/content/photo1.jpg) center no-repeat;
+	background: url(../img/content/photo8.jpg) 50% 30% no-repeat;
 	background-size: cover;
 }
 .section--three__comments:nth-child(2) {
-	background: url(../img/content/photo2.jpg) center no-repeat;
+	background: url(../img/content/photo7.jpg) center no-repeat;
 	background-size: cover;
 }
 .section--three__comments:nth-child(3) {
-	background: url(../img/content/photo3.jpg) center no-repeat;
-	background-size: cover;
+	background: url(../img/content/photo6.jpg) 65% 15% no-repeat;
+	background-size: 300%;
 }
 .section--three__comments:nth-child(4) {
-	background: url(../img/content/photo4.jpg) center no-repeat;
+	background: url(../img/content/photo1.jpg) center no-repeat;
 	background-size: cover;
 }
 .section--three__comments:nth-child(5) {
@@ -231,20 +239,71 @@ html, body, ul, li {
 	background-size: cover;
 }
 .section--three__comments:nth-child(6) {
-	background: url(../img/content/photo6.jpg) center no-repeat;
+	background: url(../img/content/photo4.jpg) center no-repeat;
 	background-size: cover;
 }
 .section--three__comments:nth-child(7) {
-	background: url(../img/content/photo7.jpg) center no-repeat;
+	background: url(../img/content/photo3.jpg) center no-repeat;
 	background-size: cover;
 }
 .section--three__comments:nth-child(8) {
-	background: url(../img/content/photo8.jpg) center no-repeat;
+	background: url(../img/content/photo2.jpg) center no-repeat;
 	background-size: cover;
 }
 .comments__button {
-	background: gray;
+	background: #2f3234;
 	text-align: center;
-	padding: 20px 25px 20px 25px;
+	padding: 14px 15px 14px 20px;
+	border-radius: 5px;
 	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+	text-transform: uppercase;
+    font-family: 'ubuntumedium';
+}
+.comments__button:hover {
+	background: #1f2122;
+}
+.comments__caption {
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.comments__comment {
+	color: white;
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.filter {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: black;
+	opacity: 0;
+	z-index: 1;
+	transition: .3s;
+}
+.comments__caption, .comments__comment, .comments__button {
+	opacity: 0;
+	transition: .3s;
+	z-index: 2;
+}
+.section--three__comments:hover .filter {
+	opacity: .4;
+}
+.section--three__comments:hover .comments__caption {
+	opacity: 1;
+}
+.section--three__comments:hover .comments__comment {
+	opacity: 1;
+}
+.section--three__comments:hover .comments__button  {
+	opacity: 1;
 }
