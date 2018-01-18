@@ -8,7 +8,8 @@ html, body, ul, li {
 }
 .header {
 	width: 100%;
-	position: fixed;
+	position: absolute;
+	top: 0;
 	z-index: 999;
 }
 .header__conteiner {
@@ -113,7 +114,7 @@ html, body, ul, li {
 .section--one__pagination {
 	color: white;
 	position: fixed;
-	margin-left: 1050px;
+	right: 20px;
 	top: 100px;
 }
 .pagination__item {
@@ -126,4 +127,124 @@ html, body, ul, li {
 }
 .pagination__item--active {
 	background: url(../img/icons/el2.png) center no-repeat;
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+
+.section--two {
+	background: url(../img/bg/bg2.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--two__container {
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.section--two__caption {
+	color: #2f3234;
+	font-size: 72.06px;
+	font-family: 'gagalinregular';
+	margin-bottom: 40px;
+}
+.section--two__features {
+	display: flex;
+}
+.features__undercaption {
+	color: #2f3234;
+	font-size: 24.12px;
+    font-family: 'lifehackmedium';
+}
+.features__block {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 300px;
+}
+.features__block:nth-child(2) {
+	margin: 0 20px 0 20px;
+}
+.features__underblock {
+	color: #6e6f6f;
+	font-size: 14.01px;
+    font-family: 'ubuntulight';
+    line-height: 1.6;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+.section-three__container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+.section--three__comments {
+	background: gray;
+	width: 25%;
+	height: 50%;
+	filter: grayscale(100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section--three__comments:nth-child(1) {
+	background: url(../img/content/photo1.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--three__comments:nth-child(2) {
+	background: url(../img/content/photo2.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--three__comments:nth-child(3) {
+	background: url(../img/content/photo3.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--three__comments:nth-child(4) {
+	background: url(../img/content/photo4.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--three__comments:nth-child(5) {
+	background: url(../img/content/photo5.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--three__comments:nth-child(6) {
+	background: url(../img/content/photo6.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--three__comments:nth-child(7) {
+	background: url(../img/content/photo7.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--three__comments:nth-child(8) {
+	background: url(../img/content/photo8.jpg) center no-repeat;
+	background-size: cover;
+}
+.comments__button {
+	background: gray;
+	text-align: center;
+	padding: 20px 25px 20px 25px;
+	box-sizing: border-box;
 }
