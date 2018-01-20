@@ -2,149 +2,166 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normolize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font.css">
 </head>
 <body>
-	<main>
-		<header class="header">
-			<div class="header__conteiner">
-				<a href="#section--one"><div class="logo"></div></a>
-				<nav class="navigation">
-					<ul class="navigation__list">
-						<li class="navigation__item"><a class="navigation__link" href="#section--two">о нас</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">бургеры</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">команда</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">меню</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#section--three">отзывы</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">контакты</a></li>
-						<li class="navigation__item"><a class="navigation__link" href="#">заказать</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<section class="section section--one" id="section--one">
-			<div class="section--one__filter"></div>
-			<div class="section--one__container">
-				<div class="drops">
-					<div class="section--one__burger"></div>
-				</div>
-				<div class="section--one__text">
-					<div class="section--one__first-text">мы делаем</div>
-					<div class="section--one__sechond-text">натуральные бургеры</div>
-				</div>
-				<div class="section--one__pagination">
-					<ul class="pagination__list">
-						<a href="#section--one"><li class="pagination__item pagination__item--active"></li></a>
-						<a href="#section--two"><li class="pagination__item"></li></a>
-						<a href="#"><li class="pagination__item"></li></a>
-						<a href="#"><li class="pagination__item"></li></a>
-						<a href="#section--three"><li class="pagination__item"></li></a>
-						<a href="#"><li class="pagination__item"></li></a>
-						<a href="#"><li class="pagination__item"></li></a>
-						<a href="#"><li class="pagination__item"></li></a>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="section section--two" id="section--two">
-			<div class="section--two__container">
-				<h2 class="section--two__caption">мы лучшие</h2>
-				<div class="section--two__features">
-					<div class="features__block">
-						<div class="features__underblock"><img class="features__img" src="img/icons/meat.svg" alt="123"></div>
-						<div class="features__underblock"><h3 class="features__undercaption">100% свежее мясо</h3></div>
-						<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+	<div class="wrapper">
+		<div class="maincontent">
+			<section class="section hero">
+				<div class="hero__filter"></div>
+				<div class="container hero__container">
+					<header class="header">
+						<div class="header__logo">
+							<a href="index.html" class="logo">
+								<img src="img/icons/logo.svg" class="logo__img" alt="logo">
+							</a>
+						</div>
+						<div class="header__menu">
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item"><a href="" class="nav__link">о нас</a></li>
+									<li class="nav__item"><a href="" class="nav__link">бургеры</a></li>
+									<li class="nav__item"><a href="" class="nav__link">команда</a></li>
+									<li class="nav__item"><a href="" class="nav__link">меню</a></li>
+									<li class="nav__item"><a href="" class="nav__link">отзывы</a></li>
+									<li class="nav__item"><a href="" class="nav__link">контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="header__btn">
+							<a class="order-link" href="">заказать</a>
+						</div>
+					</header>
+					<div class="hero__content">
+						<div class="hero__img">
+							<img src="img/content/burger.png" alt="burger">
+						</div>
+						<div class="hero__description">
+							<div class="section__title">Мы делаем</div>
+							<div class="hero__description-text">натуральные бургеры</div>
+						</div>
 					</div>
-					<div class="features__block">
-						<div class="features__underblock"><img class="features__img" src="img/icons/hand.svg" alt="123"></div>
-						<div class="features__underblock"><h3 class="features__undercaption">Ручная сборка</h3></div>
-						<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+					<div class="hero__arrow-scroll">
+						<a href="#" class="arrow-scroll__link">
+							<img src="img/icons/arrow-scroll.svg" alt="arrow" class="arrow-scroll__img">
+						</a>
+					</div>	
+				</div>	
+			</section>
+			<section class="section section--best">
+				<div class="container best__container">
+					<h2 class="best__caption">мы лучшие</h2>
+					<div class="best__features">
+						<div class="features__block">
+							<div class="features__underblock"><img class="features__img" src="img/icons/meat.svg" alt="123"></div>
+							<div class="features__underblock"><h3 class="features__undercaption">100% свежее мясо</h3></div>
+							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+						</div>
+						<div class="features__block">
+							<div class="features__underblock"><img class="features__img" src="img/icons/hand.svg" alt="123"></div>
+							<div class="features__underblock"><h3 class="features__undercaption">Ручная сборка</h3></div>
+							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+						</div>
+						<div class="features__block">
+							<div class="features__underblock"><img class="features__img" src="img/icons/natural.svg" alt="123"></div>
+							<div class="features__underblock"><h3 class="features__undercaption">Натуральные ингридиенты</h3></div>
+							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+						</div>
 					</div>
-					<div class="features__block">
-						<div class="features__underblock"><img class="features__img" src="img/icons/natural.svg" alt="123"></div>
-						<div class="features__underblock"><h3 class="features__undercaption">Натуральные ингридиенты</h3></div>
-						<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+				</div>
+			</section>
+			<section class="section section--comment" id="">
+				<div class="section--comment__container">
+					<div class="section--comment__comments">
+						<div class="filter"></div>
+						<h2 class="comments__caption">
+							Константин Спилберг
+						</h2>
+						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__button">подробнее</div>
+					</div>
+					<div class="section--comment__comments">
+						<div class="filter"></div>
+						<h2 class="comments__caption">
+							Константин Спилберг
+						</h2>
+						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__button">подробнее</div>
+					</div>
+					<div class="section--comment__comments">
+						<div class="filter"></div>
+						<h2 class="comments__caption">
+							Константин Спилберг
+						</h2>
+						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__button">подробнее</div>
+					</div>
+					<div class="section--comment__comments">
+						<div class="filter"></div>
+						<h2 class="comments__caption">
+							Константин Спилберг
+						</h2>
+						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__button">подробнее</div>
+					</div>
+					<div class="section--comment__comments">
+						<div class="filter"></div>
+						<h2 class="comments__caption">
+							Константин Спилберг
+						</h2>
+						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+					<div class="comments__button">подробнее</div>
+					</div>
+					<div class="section--comment__comments">
+						<div class="filter"></div>
+						<h2 class="comments__caption">
+							Константин Спилберг
+						</h2>
+						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__button">подробнее</div>
+					</div>
+					<div class="section--comment__comments">
+						<div class="filter"></div>
+						<h2 class="comments__caption">
+							Константин Спилберг
+					</h2>
+						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__button">подробнее</div>
+					</div>
+					<div class="section--comment__comments">
+						<div class="filter"></div>
+						<h2 class="comments__caption">
+							Константин Спилберг
+						</h2>
+						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__button">подробнее</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="section section--three" id="section--three">
-			<div class="section-three__container">
-				<div class="section--three__comments">
-					<div class="filter"></div>
-					<h2 class="comments__caption">
-						Константин Спилберг
-					</h2>
-					<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<div class="comments__button">подробнее</div>
-				</div>
-				<div class="section--three__comments">
-					<div class="filter"></div>
-					<h2 class="comments__caption">
-						Константин Спилберг
-					</h2>
-					<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<div class="comments__button">подробнее</div>
-				</div>
-				<div class="section--three__comments">
-					<div class="filter"></div>
-					<h2 class="comments__caption">
-						Константин Спилберг
-					</h2>
-					<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<div class="comments__button">подробнее</div>
-				</div>
-				<div class="section--three__comments">
-					<div class="filter"></div>
-					<h2 class="comments__caption">
-						Константин Спилберг
-					</h2>
-					<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<div class="comments__button">подробнее</div>
-				</div>
-				<div class="section--three__comments">
-					<div class="filter"></div>
-					<h2 class="comments__caption">
-						Константин Спилберг
-					</h2>
-					<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<div class="comments__button">подробнее</div>
-				</div>
-				<div class="section--three__comments">
-					<div class="filter"></div>
-					<h2 class="comments__caption">
-						Константин Спилберг
-					</h2>
-					<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<div class="comments__button">подробнее</div>
-				</div>
-				<div class="section--three__comments">
-					<div class="filter"></div>
-					<h2 class="comments__caption">
-						Константин Спилберг
-					</h2>
-					<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<div class="comments__button">подробнее</div>
-				</div>
-				<div class="section--three__comments">
-					<div class="filter"></div>
-					<h2 class="comments__caption">
-						Константин Спилберг
-					</h2>
-					<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-					<div class="comments__button">подробнее</div>
-				</div>
-			</div>
-		</section>
-		<sessction class="section"></section>
-		<section class="section"></section>
-		<section class="section"></section>
-		<section class="section"></section>
-		<footer></footer>
-	</main>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+			</section>
+			<section>
+					<div id="map" style="width: 100wh; height: 100vh"></div>
+			</section>
+		</div>
+	</div>
+	<div class="nav-bar">
+		<ul class="nav-bar__list">
+			<a href="#"><li class="nav-bar__item nav-bar__item--active"></li></a>
+			<a href="#"><li class="nav-bar__item"></li></a>
+			<a href="#"><li class="nav-bar__item"></li></a>
+			<a href="#"><li class="nav-bar__item"></li></a>
+			<a href="#"><li class="nav-bar__item"></li></a>
+			<a href="#"><li class="nav-bar__item"></li></a>
+			<a href="#"><li class="nav-bar__item"></li></a>
+			<a href="#"><li class="nav-bar__item"></li></a>
+		</ul>
+	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+	</script>
+	<script src="js/myMap.js"></script>
+	<script src="js/whereI.js"></script>
 </body>
 </html>

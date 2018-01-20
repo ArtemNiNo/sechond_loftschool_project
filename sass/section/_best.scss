@@ -1,0 +1,39 @@
+.section--best {
+    background: url(../img/bg/bg2.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    .best__caption {
+        color: $dark;
+        font-weight: 300;
+        font-size: 72px;
+        font-family: 'gagalinregular';
+        margin-bottom: 40px;
+    }
+    .best__features {
+    display: flex;
+    text-align: center;
+    .features__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+}
+}
+
+.features__undercaption {
+	color: #2f3234;
+	font-size: 24.12px;
+    font-family: 'lifehackmedium';
+    align-self: center;
+}
+.features__block:nth-child(2) {
+	margin: 0 20px 0 20px;
+}
+.features__underblock {
+	color: #6e6f6f;
+	font-size: 14.01px;
+    font-family: 'ubuntulight';
+    line-height: 1.6;
+}

@@ -1,0 +1,112 @@
+.section--comment__container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.section--comment__comments {
+	position: relative;
+	padding-top: 5%;
+	padding-left: 3%;
+	padding-right: 3%;
+	box-sizing: border-box;
+	background: gray;
+	width: 25%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	filter: grayscale(100%);
+}
+.section--comment__comments:nth-child(1) {
+	background: url(../img/content/photo8.jpg) 50% 30% no-repeat;
+	background-size: cover;
+}
+.section--comment__comments:nth-child(2) {
+	background: url(../img/content/photo7.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--comment__comments:nth-child(3) {
+	background: url(../img/content/photo6.jpg) 65% 15% no-repeat;
+	background-size: 300%;
+}
+.section--comment__comments:nth-child(4) {
+	background: url(../img/content/photo1.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--comment__comments:nth-child(5) {
+	background: url(../img/content/photo5.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--comment__comments:nth-child(6) {
+	background: url(../img/content/photo4.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--comment__comments:nth-child(7) {
+	background: url(../img/content/photo3.jpg) center no-repeat;
+	background-size: cover;
+}
+.section--comment__comments:nth-child(8) {
+	background: url(../img/content/photo2.jpg) center no-repeat;
+	background-size: cover;
+}
+.comments__button {
+	background: #2f3234;
+	text-align: center;
+	padding: 14px 15px 14px 20px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+	text-transform: uppercase;
+    font-family: 'ubuntumedium';
+    &:hover {
+        background: #1f2122;
+    }
+}
+.comments__caption {
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.comments__comment {
+	color: white;
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.filter {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: black;
+	opacity: 0;
+	z-index: 1;
+	transition: .3s;
+}
+.comments__caption, .comments__comment, .comments__button {
+	opacity: 0;
+	transition: .3s;
+	z-index: 2;
+}
+.section--comment__comments:hover .filter {
+	opacity: .4;
+}
+.section--comment__comments:hover .comments__caption {
+	opacity: 1;
+}
+.section--comment__comments:hover .comments__comment {
+	opacity: 1;
+}
+.section--comment__comments:hover .comments__button  {
+	opacity: 1;
+}
