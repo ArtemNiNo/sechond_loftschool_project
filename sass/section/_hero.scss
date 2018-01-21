@@ -10,6 +10,7 @@
         left: 0;
         background: url(../img/bg/texture.png);
         z-index: 1;
+        opacity: .5;
     }
     .hero__container {
         height: 100%;
@@ -25,8 +26,7 @@
             align-items: center;
             z-index: 2;
             .nav {
-                margin-right: rem(15px);
-                margin-left: 205px;
+                margin-left: 200px;
                 .nav__list {
                     margin: 0;
                     padding: 0;
@@ -39,8 +39,8 @@
                         display: inline-block;
                         vertical-align: middle;
                         content: ' ';
-                        @include circle(5px, #fff);
-                        margin: 0 12px;
+                        @include circle(4px, #fff);
+                        margin: 0 15px;
                     }
                     &:last-child:after {
                         display: none;
@@ -77,7 +77,6 @@
     margin: 0;
     padding-top: 60px;
     font-family: "gagalinregular";
-    padding-top: 60px;
 }
 .hero__img, .hero__description {
     flex-basis: 50%;
@@ -92,8 +91,15 @@
         font-weight: 500px;
         line-height: 1;
         font-family: 'lifehackmedium';
+        transform: translate(0, 10px);
+        letter-spacing: -2px;
     }
 }
 .hero__arrow-scroll {
     z-index: 2;
+    transform: translate(0, -40px);
+    &:hover {
+        transform: translate(0, -35px);
+        transition: .4s;
+    }
 }

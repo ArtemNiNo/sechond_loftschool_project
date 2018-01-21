@@ -8,16 +8,21 @@
         font-size: 72px;
         font-family: 'gagalinregular';
         margin-bottom: 40px;
+        transform: translate(0, -45px);
     }
     .best__features {
     display: flex;
     text-align: center;
+    transform: translate(0, -55px);
     .features__block {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 300px;
+        width: 33.33%;
+        &:first-child {
+            transform: translate(0, -10px);
+        }
     }
 }
 }
