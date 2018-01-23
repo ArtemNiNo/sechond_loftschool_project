@@ -1,0 +1,95 @@
+.section--comand {
+    background: url(../img/bg/bg4.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.comand__right-filter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: $dark;
+    opacity: .9;
+    z-index: 1;
+}
+.comand__right-content {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 3;
+    color: white;
+    display: flex;
+    float: right;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.section__title--comand {
+    font-weight: 100;
+}
+.comand__item {
+    font-family: 'gagalinregular';
+    font-weight: 100;
+    cursor: pointer;
+}.svg_com {
+    transform: scale(1);
+    transform-origin: 50%;
+    transform: rotateX(180deg);
+    margin-right: 5px;
+    &:hover {
+        transform: rotateX(360deg);
+        transition: .3s;
+    }
+}
+.comand__underlist {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.comand__item {
+    height: 40px;
+    overflow: hidden;
+    &:hover {
+        color: $yellow;
+        transition: .3s;
+    }
+    &:hover .svg_com{
+        transform: rotateX(360deg);
+        transition: .3s;
+    }
+}
+.comand__item--active {
+    height: auto;
+    overflow: hidden;
+    color: $yellow;
+    .comand__undercaption {
+        color: white;
+    }
+    .text__undertext {
+        color: white;
+    }
+}
+.comand__item--active  .svg_com{
+    transform: rotateX(360deg);
+    transition: .3s;
+}
+.comand__img {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    visibility: hidden;
+}
+.comand__container-img {
+    margin-top: 20px;
+    background: url(../img/content/face.jpg) 65% 0 no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+.comand__undercaption {
+    font-family: 'ubuntubold';
+}
+.text__undertext {
+    font-family: 'ubuntulight';
+}
