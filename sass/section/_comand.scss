@@ -47,27 +47,44 @@
     margin-bottom: 40px;
 }
 .comand__item {
-    height: 40px;
+    height: 20px;
+    transition: .3s;
     overflow: hidden;
+    margin-bottom: 20px;
     &:hover {
         color: $yellow;
-        transition: .3s;
-    }
-    &:hover .svg_com{
-        transform: rotateX(360deg);
         transition: .3s;
     }
 }
 .comand__item--active {
     height: auto;
-    overflow: hidden;
+    overflow: visible;
     color: $yellow;
+    transition: .3s;
     .comand__undercaption {
         color: white;
     }
     .text__undertext {
         color: white;
     }
+    .comand__undercaption {
+        opacity: 1;
+    }
+    .text__undertext {
+        opacity: 1;
+    }
+    .comand__container-img {
+        opacity: 1;
+    }
+}
+.comand__undercaption {
+    opacity: 0;
+}
+.text__undertext {
+    opacity: 0;
+}
+.comand__container-img {
+    opacity: 0;
 }
 .comand__item--active  .svg_com{
     transform: rotateX(360deg);
