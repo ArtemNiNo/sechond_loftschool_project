@@ -1,8 +1,10 @@
 .hero {
+    padding-top: 10px;
     background: url(../img/bg/bg1.jpg) center no-repeat;
     background-size: cover;
     position: relative;
-    .hero__filter {
+    &:before {
+        content: "<div></div>";
         width: 100%;
         height: 100%;
         position: absolute;
@@ -22,11 +24,9 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            padding-top: 10px;
             align-items: center;
             z-index: 2;
             .nav {
-                margin-left: 200px;
                 .nav__list {
                     margin: 0;
                     padding: 0;
@@ -50,6 +50,8 @@
                         text-decoration: none;
                         display: inline-block;
                         font-weight: 400;
+                        text-transform: uppercase;
+                        font-size: 13px;
                         &:hover {
                             text-decoration: underline;
                         }
@@ -59,7 +61,9 @@
         }
     }
 }
-
+.header__menu {
+    margin-left: 180px;
+}
 .hero__content {
     z-index: 2;
     width: 100%;
@@ -72,10 +76,9 @@
 .section__title {
     color: $yellow;
     font-size: 72px;
-    font-weight: 300px;
+    font-weight: 100;
     line-height: 1.42;
     margin: 0;
-    padding-top: 60px;
     font-family: "gagalinregular";
 }
 .hero__img, .hero__description {
@@ -85,10 +88,11 @@
 .hero__description {
     flex-direction: column;
     justify-content: center;
+    padding-top: 60px;
     .hero__description-text {
         color: #fff;
         font-size: 65px;
-        font-weight: 500px;
+        font-weight: 100;
         line-height: 1;
         font-family: 'lifehackmedium';
         transform: translate(0, 10px);
@@ -101,5 +105,10 @@
     &:hover {
         transform: translate(0, -35px);
         transition: .4s;
+    }
+}
+.arrow-scroll__link {
+    svg {
+        transform: scale(3);
     }
 }

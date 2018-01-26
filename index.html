@@ -10,9 +10,8 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="maincontent">
+		<div class="main-content">
 			<section id="one" class="section hero">
-				<div class="hero__filter"></div>
 				<div class="container hero__container">
 					<header class="header">
 						<div class="header__logo">
@@ -41,13 +40,17 @@
 							<img src="img/content/burger.png" alt="burger">
 						</div>
 						<div class="hero__description">
-							<div class="section__title">Мы делаем</div>
-							<div class="hero__description-text">натуральные бургеры</div>
+							<h2 class="section__title">Мы делаем</h2>
+							<h3 class="hero__description-text">натуральные бургеры</h3>
 						</div>
 					</div>
 					<div class="hero__arrow-scroll">
 						<a href="#two" class="arrow-scroll__link">
-							<img src="img/icons/arrow-scroll.svg" alt="arrow" class="arrow-scroll__img">
+							<svg  x="0px" y="0px"
+							width="11px" height="11px" viewBox="0 0 28.685 14.479" enable-background="new 0 0 28.685 14.479" xml:space="preserve">
+								<use xlink:href="#arrow">
+								</use>
+							</svg>
 						</a>
 					</div>	
 				</div>	
@@ -55,243 +58,269 @@
 			<section id="two" class="section section--best">
 				<div class="container best__container">
 					<h2 class="best__caption">мы лучшие</h2>
-					<div class="best__features">
-						<div class="features__block">
+					<ul class="best__features">
+						<li class="features__block">
 							<div class="features__underblock"><img class="features__img" src="img/icons/meat.svg" alt="123"></div>
 							<div class="features__underblock"><h3 class="features__undercaption">100% свежее мясо</h3></div>
 							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
-						</div>
-						<div class="features__block">
+						</li>
+						<li class="features__block">
 							<div class="features__underblock"><img class="features__img" src="img/icons/hand.svg" alt="123"></div>
 							<div class="features__underblock"><h3 class="features__undercaption">Ручная сборка</h3></div>
 							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
-						</div>
-						<div class="features__block">
+						</li>
+						<li class="features__block">
 							<div class="features__underblock"><img class="features__img" src="img/icons/natural.svg" alt="123"></div>
 							<div class="features__underblock"><h3 class="features__undercaption">Натуральные ингридиенты</h3></div>
 							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</section>
-			<section id="three" class="section"></section>
+			<section id="three" class="section section__slider"></section>
 			<section id="four" class="section section--comand">
-				<div class="comand__right-filter"></div>
 				<div class="comand__right-content">
 					<div class="comand__continer">
 						<h2 class="section__title section__title--comand">Команда</h2>
 						<ul class="comand__list">
-								<li class="comand__item">
+							<li class="comand__item">
+								<a class="comand__link">
 									<svg class="svg_com" width="20" height="7">
 										<polygon points="9,1 20,16 1,12"
-										 fill="#f9b43b" viewBox="0 0 12 12"/>
+										fill="#f9b43b" viewBox="0 0 12 12"/>
 									</svg>Дэниэл Редклиф
-										<ul class="comand__underlist">
-											<li class="comand__underitem">
-												<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
-											</li>
-											<li class="comand__underitem">
-												<div class="comand__underinfo">
-													<h4 class="comand__undercaption">Оператор</h4>
-													<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.															
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
-							<li class="comand__item">
-								<svg class="svg_com" width="20" height="7">
-									<polygon points="9,1 20,16 1,12"
-									 fill="#f9b43b" viewBox="0 0 12 12"/>
-								</svg>Ричард Джеймс
-								<ul class="comand__underlist">
-										<li class="comand__underitem">
-												<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
-										</li>
-										<li class="comand__underitem">
-											<div class="comand__underinfo">
-												<h4 class="comand__undercaption">Оператор</h4>
-												<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.														
-												</div>
-											</div>
-										</li>
-									</ul>
-							</li>
-							<li class="comand__item">
-								<svg class="svg_com" width="20" height="7">
-									<polygon points="9,1 20,16 1,12"
-									 fill="#f9b43b" viewBox="0 0 12 12"/>
-								</svg>Джейк Фиин
-								<ul class="comand__underlist">
-										<li class="comand__underitem">
-												<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
-										</li>
-										<li class="comand__underitem">
-											<div class="comand__underinfo">
-												<h4 class="comand__undercaption">Оператор</h4>
-												<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.														
-												</div>
-											</div>
-										</li>
-									</ul>
-							</li>
-							<li class="comand__item">
-									<svg class="svg_com" width="20" height="7">
-										<polygon points="9,1 20,16 1,12"
-										 fill="#f9b43b" viewBox="0 0 12 12"/>
-									</svg>Николай Иванов
-									<ul class="comand__underlist">
-											<li class="comand__underitem">
-													<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
-											</li>
-											<li class="comand__underitem">
-												<div class="comand__underinfo">
-													<h4 class="comand__undercaption">Оператор</h4>
-													<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.															
-													</div>
-												</div>
-											</li>
-										</ul>
+								</a>
+									<div class="comand__underinfo">
+										<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
+									<div class="text">
+										<h4 class="comand__undercaption">Оператор</h4>
+										<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+									<div>
 								</li>
-						</ul>
-					</div>
-				</div>
+								<li class="comand__item">
+									<a class="comand__link">
+										<svg class="svg_com" width="20" height="7">
+											<polygon points="9,1 20,16 1,12"
+											fill="#f9b43b" viewBox="0 0 12 12"/>
+										</svg>Ричард Джеймс
+									</a>
+										<div class="comand__underinfo">
+											<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
+										<div class="text">
+											<h4 class="comand__undercaption">Оператор</h4>
+											<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+										<div>
+									</li>
+									<li class="comand__item">
+										<a class="comand__link">
+										<svg class="svg_com" width="20" height="7">
+												<polygon points="9,1 20,16 1,12"
+											fill="#f9b43b" viewBox="0 0 12 12"/>
+										</svg>Джейк Финн
+									</a>
+										<div class="comand__underinfo">
+											<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
+										<div class="text">
+											<h4 class="comand__undercaption">Оператор</h4>
+											<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+										<div>
+									</li>
+									<li class="comand__item">
+										<a class="comand__link">
+											<svg class="svg_com" width="20" height="7">
+												<polygon points="9,1 20,16 1,12"
+												fill="#f9b43b" viewBox="0 0 12 12"/>
+											</svg>Николай Иванов
+										</a>
+										<div class="comand__underinfo">
+											<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
+										<div class="text">
+											<h4 class="comand__undercaption">Оператор</h4>
+											<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+										<div>
+									</li>
+								</ul>
+							</div>
+						</div>
 			</section>
 			<section id="five" class="section section__menu">
 				<h2 class="section__title section__title--menu">Меню</h2>
-				<div class="menu__right">
-					<div class="menu__content"><div class="menu__text-filter"></div><div class="menu__title-filter"></div><h4 class="menu__title">для мясоедов</h4>
-					<div class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-				Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</div></div>
-									<div class="menu__content"><div class="menu__text-filter"></div><div class="menu__title-filter"></div><h4 class="menu__title">вегетарианское</h4>
-									<div class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-				Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</div></div>
-									<div class="menu__content"><div class="menu__text-filter"></div><div class="menu__title-filter"></div><h4 class="menu__title">диеточеское</h4>
-									<div class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
-				Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</div></div>
-				</div>
+				<ul class="menu__right">
+					<li class="menu__content">
+						<h4 class="menu__title">для мясоедов</h4>
+						<div class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+						Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</div>
+					</li>
+					<li class="menu__content">
+						<h4 class="menu__title">вегетарианское</h4>
+						<div class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+						Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</div>
+					</li>
+					<li class="menu__content">
+						<h4 class="menu__title">диеточеское</h4>
+						<div class="menu__text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+						Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</div>
+					</li>
+				</ul>
 			</section>
-			<section id="six" class="section section--comment" id="">
-				<div class="section--comment__container">
-					<div class="section--comment__comments">
+			<section id="six" class="section section--comment">
+				<div class="comment__container">
+					<div class="comment__comments">
 						<div class="filter"></div>
 						<h2 class="comments__caption">
 							Константин Спилберг
 						</h2>
-						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 						<div class="comments__button">подробнее</div>
 					</div>
-					<div class="section--comment__comments">
+					<div class="comment__comments">
 						<div class="filter"></div>
 						<h2 class="comments__caption">
 							Константин Спилберг
 						</h2>
-						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 						<div class="comments__button">подробнее</div>
 					</div>
-					<div class="section--comment__comments">
+					<div class="comment__comments">
 						<div class="filter"></div>
 						<h2 class="comments__caption">
 							Константин Спилберг
 						</h2>
-						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 						<div class="comments__button">подробнее</div>
 					</div>
-					<div class="section--comment__comments">
+					<div class="comment__comments">
 						<div class="filter"></div>
 						<h2 class="comments__caption">
 							Константин Спилберг
 						</h2>
-						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 						<div class="comments__button">подробнее</div>
 					</div>
-					<div class="section--comment__comments">
+					<div class="comment__comments">
 						<div class="filter"></div>
 						<h2 class="comments__caption">
 							Константин Спилберг
 						</h2>
-						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 					<div class="comments__button">подробнее</div>
 					</div>
-					<div class="section--comment__comments">
+					<div class="comment__comments">
 						<div class="filter"></div>
 						<h2 class="comments__caption">
 							Константин Спилберг
 						</h2>
-						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 						<div class="comments__button">подробнее</div>
 					</div>
-					<div class="section--comment__comments">
+					<div class="comment__comments">
 						<div class="filter"></div>
 						<h2 class="comments__caption">
 							Константин Спилберг
 					</h2>
-						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 						<div class="comments__button">подробнее</div>
 					</div>
-					<div class="section--comment__comments">
+					<div class="comment__comments">
 						<div class="filter"></div>
 						<h2 class="comments__caption">
 							Константин Спилберг
 						</h2>
-						<div class="comments__comment">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+						<div class="comments__comment-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 						<div class="comments__button">подробнее</div>
 					</div>
 				</div>
 			</section>
-			<section id="seven" class="section"></section>
+			<section id="seven" class="section section__form">
+				<div class="container">
+						<h2 class="section__title section__title--form">закажите доставку</h2>
+						<form class="form__form" action="">
+							<div class="form__input">
+								<div class="input__name-phone">
+									<input class="input__name" type="text">
+									<input class="input__name" type="text">
+								</div>
+								<div class="input__street">
+									<input class="street__input" type="text">
+								</div>
+								<div class="input__home">
+									<input class="home__input" type="text">
+									<input class="home__input" type="text">
+									<input class="home__input" type="text">
+									<input class="home__input" type="text">
+								</div>
+							</div>
+							<div class="form__comment">
+								<textarea class="comment__text" name="" id="" cols="30" rows="10"></textarea>
+								<div class="form__radio">
+										<input checked="checked" class="radio__radiobutton" type="radio" name="" id="radioOne"><label class="form__label" for="radioOne">Потребуется сдача</label>
+										<input class="radio__radiobutton" type="radio" name="" id="radioTwo"><label class="form__label" for="radioTwo">Оплата по карте</label>
+								</div>
+								<div class="form__check">
+									<label for="checkOne" class="form__label"><input class="check__checkbox" type="checkbox" name="" id="checkOne">Не перезванивать</label>
+								</div>
+							</div>
+						</form>
+				</div>
+			</section>
 			<section id="eight" class="section section--contacts">
 					<div id="map">
 					</div>
-					<div class="contacts__footer">
+					<footer class="section--contacts__footer">
 						<div class="footer__contact">
-							<div class="footer__textOne">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-							<div class="footer__textTwo"><svg x="0px" y="0px"
+							<div class="footer__text-one">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+							<div class="footer__text-two"><svg x="0px" y="0px"
 								width="11px" height="11px" viewBox="0 0 11 11" enable-background="new 0 0 11 11" xml:space="preserve">
 								<use xlink:href="#phone">
 									</use>
-						   </svg> +7 (812) 377-13-77</div>
+						   </svg><a class="text-two__link" href="tel:+78123771377"> +7 (812) 377-13-77</a></div>
 						</div>
 						<div class="footer__social">
-						<a class="svg__link" href="#"><svg class="icon" viewBox="0 0 126 72">
+						<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 126 72">
 								<use xlink:href="#vk">
 								</use>
 							</svg>
 						</a>
-						<a class="svg__link" href="#"><svg class="icon" viewBox="0 0 36.711 36.711">
+						<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 36.711 36.711">
 								<use xlink:href="#fb">
 								</use>
 							</svg>
 						</a>
-							<a class="svg__link" href="#"><svg class="icon" viewBox="0 0 37.453 31.21">
+							<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 37.453 31.21">
 								<use xlink:href="#tw">
 								</use>
 								</svg>
 							</a>
-							<a class="svg__link" href="#"><svg class="icon" viewBox="0 0 36.663 36.664">
+							<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 36.663 36.664">
 								<use xlink:href="#inst">
 								</use>
 							</svg>
 							</a>
 						</div>
-					</div>
+					</footer>
 			</section>
 		</div>
 	</div>
 	<div class="nav-bar">
 		<ul class="nav-bar__list">
-			<a href="#one"><li class="nav-bar__item nav-bar__item--active"></li></a>
-			<a href="#two"><li class="nav-bar__item"></li></a>
-			<a href="#three"><li class="nav-bar__item"></li></a>
-			<a href="#four"><li class="nav-bar__item"></li></a>
-			<a href="#five"><li class="nav-bar__item"></li></a>
-			<a href="#six"><li class="nav-bar__item"></li></a>
-			<a href="#seven"><li class="nav-bar__item"></li></a>
-			<a href="#eight"><li class="nav-bar__item"></li></a>
+			<li class="nav-bar__item"><a  class="nav-bar__link" href="#one"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link" href="#two"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link" href="#three"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link" href="#four"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link" href="#five"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link" href="#six"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link" href="#seven"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link" href="#eight"></a></li>
 		</ul>
 	</div>
 	<div hidden>
 		<svg>
+			<g id="arrow">
+					<path fill="#FFFFFF" d="M14.332,14.479c-1.279,0-2.554-0.486-3.525-1.458L0.268,1.681c-0.376-0.404-0.353-1.037,0.052-1.413
+					c0.403-0.374,1.036-0.354,1.413,0.052l10.514,11.314c1.145,1.143,3.049,1.142,4.218-0.026L26.952,0.319
+					c0.378-0.405,1.011-0.426,1.413-0.052c0.404,0.376,0.428,1.009,0.052,1.413L17.903,12.995
+					C16.913,13.986,15.62,14.479,14.332,14.479z"/>
+			</g>
 			<g id="phone">
 				<path fill="#E45028" d="M10.758,9.774c-0.164,0.383-0.602,0.633-0.953,0.828C9.344,10.852,8.875,11,8.352,11
 					c-0.727,0-1.383-0.297-2.047-0.539c-0.477-0.172-0.938-0.383-1.367-0.648c-1.328-0.82-2.93-2.422-3.75-3.75

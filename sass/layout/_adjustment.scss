@@ -5,7 +5,7 @@
 .wrapper {
     width: 100%;
     height: 100%;
-    .maincontent {
+    .main-content {
         height: 100%;
         min-height: 650px;
         .section {
@@ -49,14 +49,17 @@
 	top: 90px;
 	z-index: 9999999;
 }
-.nav-bar__item {
+.nav-bar__link {
 	margin-bottom: 1px;
-	font-size: 20px;
 	background: url(../img/icons/el.png) center no-repeat;
 	list-style-type: none;
 	width: 20px;
-	height: 20px;
+    height: 20px;
+    display: block;
+    &:hover {
+        background: url(../img/icons/el2.png) center no-repeat; 
+    }
 }
-.nav-bar__item--active {
+.nav-bar__link--active {
 	background: url(../img/icons/el2.png) center no-repeat;
 }

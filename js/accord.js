@@ -1,10 +1,7 @@
 const comandItem = document.getElementsByClassName('comand__item'),
       numComandItem = comandItem.length,
       menuContent = document.getElementsByClassName('menu__content'),
-      numMenuContent = menuContent.length,
-      five = document.querySelector('#five');
-
-      
+      numMenuContent = menuContent.length;
  function ac (a, b, c) {
     for (var i = 0; i < b; i++) {
         a[i].addEventListener('click', function() {
@@ -17,6 +14,5 @@ const comandItem = document.getElementsByClassName('comand__item'),
         })
     }
 }
-
 ac(menuContent, numMenuContent, 'menu__content--active');
 ac(comandItem, numComandItem, 'comand__item--active');

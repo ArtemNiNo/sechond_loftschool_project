@@ -5,7 +5,7 @@
 .section--contacts {
     position: relative;
 }
-.contacts__footer {
+.section--contacts__footer {
     position: absolute;
     width: 100%;
     background: #0e0e0e;
@@ -22,10 +22,10 @@
 .footer__contact {
     margin-left: 0 auto;
 }
-.footer__textOne {
+.footer__text-one {
     color: white;
 }
-.footer__textTwo {
+.footer__text-two {
     color: $orange;
     font-family: 'ubuntubold';
 }
@@ -43,6 +43,10 @@
         transition: .3s;
     }
 }
-.svg__link {
+.sicial__link {
+    text-decoration: none;
+}
+.text-two__link {
+    color: $orange;
     text-decoration: none;
 }

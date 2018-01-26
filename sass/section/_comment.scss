@@ -1,4 +1,4 @@
-.section--comment__container {
+.comment__container {
 	display: flex;
 	width: 100%;
 	height: 100%;
@@ -6,7 +6,7 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 }
-.section--comment__comments {
+.comment__comments {
 	position: relative;
 	padding-top: 3%;
 	padding-left: 3%;
@@ -21,35 +21,35 @@
 	justify-content: flex-start;
 	filter: grayscale(100%);
 }
-.section--comment__comments:nth-child(1) {
+.comment__comments:nth-child(1) {
 	background: url(../img/content/photo8.jpg) 50% 30% no-repeat;
 	background-size: cover;
 }
-.section--comment__comments:nth-child(2) {
+.comment__comments:nth-child(2) {
 	background: url(../img/content/photo7.jpg) center no-repeat;
 	background-size: cover;
 }
-.section--comment__comments:nth-child(3) {
+.comment__comments:nth-child(3) {
 	background: url(../img/content/photo6.jpg) 65% 15% no-repeat;
 	background-size: 300%;
 }
-.section--comment__comments:nth-child(4) {
+.comment__comments:nth-child(4) {
 	background: url(../img/content/photo1.jpg) 80% 100% no-repeat;
 	background-size: cover;
 }
-.section--comment__comments:nth-child(5) {
+.comment__comments:nth-child(5) {
 	background: url(../img/content/photo5.jpg) center no-repeat;
 	background-size: cover;
 }
-.section--comment__comments:nth-child(6) {
+.comment__comments:nth-child(6) {
 	background: url(../img/content/photo4.jpg) 30% 100% no-repeat;
 	background-size: cover;
 }
-.section--comment__comments:nth-child(7) {
+.comment__comments:nth-child(7) {
 	background: url(../img/content/photo3.jpg) center no-repeat;
 	background-size: cover;
 }
-.section--comment__comments:nth-child(8) {
+.comment__comments:nth-child(8) {
 	background: url(../img/content/photo2.jpg) center no-repeat;
 	background-size: cover;
 }
@@ -75,7 +75,7 @@
     text-align: left;
     margin-bottom: 15px;
 }
-.comments__comment {
+.comments__comment-text {
 	color: white;
     font-family: 'ubuntulight';
     font-size: 14px;
@@ -93,20 +93,20 @@
 	z-index: 1;
 	transition: .3s;
 }
-.comments__caption, .comments__comment, .comments__button {
+.comments__caption, .comments__comment-text, .comments__button {
 	opacity: 0;
 	transition: .3s;
 	z-index: 2;
 }
-.section--comment__comments:hover .filter {
+.comment__comments:hover .filter {
 	opacity: .4;
 }
-.section--comment__comments:hover .comments__caption {
+.comment__comments:hover .comments__caption {
 	opacity: 1;
 }
-.section--comment__comments:hover .comments__comment {
+.comment__comments:hover .comments__comment-text {
 	opacity: 1;
 }
-.section--comment__comments:hover .comments__button  {
+.comment__comments:hover .comments__button  {
 	opacity: 1;
 }
