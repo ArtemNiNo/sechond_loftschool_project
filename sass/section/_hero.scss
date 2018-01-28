@@ -1,5 +1,5 @@
 .hero {
-    padding-top: 10px;
+    padding-top: rem(10px);
     background: url(../img/bg/bg1.jpg) center no-repeat;
     background-size: cover;
     position: relative;
@@ -39,8 +39,8 @@
                         display: inline-block;
                         vertical-align: middle;
                         content: ' ';
-                        @include circle(4px, #fff);
-                        margin: 0 15px;
+                        @include circle(rem(4px), #fff);
+                        margin: 0 rem(15px);
                     }
                     &:last-child:after {
                         display: none;
@@ -51,7 +51,7 @@
                         display: inline-block;
                         font-weight: 400;
                         text-transform: uppercase;
-                        font-size: 13px;
+                        font-size: rem(13px);
                         &:hover {
                             text-decoration: underline;
                         }
@@ -62,7 +62,10 @@
     }
 }
 .header__menu {
-    margin-left: 180px;
+    margin-left: 18%;
+    @include tablets {
+        display: none;
+    }
 }
 .hero__content {
     z-index: 2;
@@ -72,14 +75,20 @@
     align-items: center;
     flex-grow: 1;
     padding-bottom: 15%;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .section__title {
     color: $yellow;
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 100;
     line-height: 1.42;
     margin: 0;
     font-family: "gagalinregular";
+    @include tablets {
+        text-align: center;
+    }
 }
 .hero__img, .hero__description {
     flex-basis: 50%;
@@ -88,22 +97,28 @@
 .hero__description {
     flex-direction: column;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: rem(60px);
+    @include tablets {
+        text-align: center;
+    }
     .hero__description-text {
         color: #fff;
-        font-size: 65px;
+        font-size: rem(65px);
         font-weight: 100;
         line-height: 1;
         font-family: 'lifehackmedium';
-        transform: translate(0, 10px);
-        letter-spacing: -2px;
+        transform: translate(0, rem(10px));
+        letter-spacing: rem(-2px);
+        @include tablets {
+            width: 300px;
+        }
     }
 }
 .hero__arrow-scroll {
     z-index: 2;
-    transform: translate(0, -40px);
+    transform: translate(0, rem(-40px));
     &:hover {
-        transform: translate(0, -35px);
+        transform: translate(0, rem(-35px));
         transition: .4s;
     }
 }

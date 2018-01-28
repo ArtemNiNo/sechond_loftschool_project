@@ -6,24 +6,40 @@
     position: relative;
 }
 .section--contacts__footer {
-    position: absolute;
     width: 100%;
-    background: #0e0e0e;
-    padding: 7px 70px 7px 70px;
+    background:url(../img/bg/bg7.jpg) center no-repeat;
+    padding: rem(7px) rem(70px) rem(7px) rem(70px);
     z-index: 2;
     bottom: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: rem(13px);
     line-height: 1.9;
-    letter-spacing: .3px;
+    letter-spacing: rem(.3px);
+    @include phones {
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @include tablets {
+        bottom: rem(-130px);
+    }
 }
 .footer__contact {
     margin-left: 0 auto;
+    @include phones {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
 }
 .footer__text-one {
     color: white;
+    @include phones {
+        margin-bottom: 10px;
+    }
 }
 .footer__text-two {
     color: $orange;
@@ -33,11 +49,11 @@
     display: inline-block;
     vertical-align: middle;
     fill: white;
-    width: 20px;
-    height: 20px;
-    margin-left: 16px;
+    width:rem( 20px);
+    height: rem(20px);
+    margin-left: rem(16px);
     opacity: .5;
-    margin-top: 14px;
+    margin-top: rem(14px);
     &:hover {
         opacity: 1;
         transition: .3s;
@@ -49,4 +65,9 @@
 .text-two__link {
     color: $orange;
     text-decoration: none;
+}
+.footer__social {
+    @include phones {
+        margin: 0 auto;
+    }
 }

@@ -61,18 +61,15 @@
 					<ul class="best__features">
 						<li class="features__block">
 							<div class="features__underblock"><img class="features__img" src="img/icons/meat.svg" alt="123"></div>
-							<div class="features__underblock"><h3 class="features__undercaption">100% свежее мясо</h3></div>
-							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+							<div class="features__underblock"><h3 class="features__undercaption">100% свежее мясо</h3><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p></div>
 						</li>
 						<li class="features__block">
 							<div class="features__underblock"><img class="features__img" src="img/icons/hand.svg" alt="123"></div>
-							<div class="features__underblock"><h3 class="features__undercaption">Ручная сборка</h3></div>
-							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+							<div class="features__underblock"><h3 class="features__undercaption">Ручная сборка</h3><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p></div>
 						</li>
 						<li class="features__block">
 							<div class="features__underblock"><img class="features__img" src="img/icons/natural.svg" alt="123"></div>
-							<div class="features__underblock"><h3 class="features__undercaption">Натуральные ингридиенты</h3></div>
-							<div class="features__underblock">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+							<div class="features__underblock"><h3 class="features__undercaption">Натуральные ингредиенты</h3><p>Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</p></div>
 						</li>
 					</ul>
 				</div>
@@ -90,12 +87,13 @@
 										fill="#f9b43b" viewBox="0 0 12 12"/>
 									</svg>Дэниэл Редклиф
 								</a>
-									<div class="comand__underinfo">
-										<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
+								<div class="comand__underinfo">
+									<div class="comand__container-img"><img class="comand__img" src="img/content/face.jpg" alt="123"></div>
 									<div class="text">
 										<h4 class="comand__undercaption">Оператор</h4>
 										<div class="text__undertext">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-									<div>
+									</div>
+								<div>
 								</li>
 								<li class="comand__item">
 									<a class="comand__link">
@@ -232,32 +230,60 @@
 				</div>
 			</section>
 			<section id="seven" class="section section__form">
-				<div class="container">
+				<div class="container form__container">
 						<h2 class="section__title section__title--form">закажите доставку</h2>
 						<form class="form__form" action="">
 							<div class="form__input">
 								<div class="input__name-phone">
-									<input class="input__name" type="text">
-									<input class="input__name" type="text">
+									<label class="input__label input__label--name" for="">
+										<div>Имя</div>
+										<input class="input__name" type="text">
+									</label> 
+									<label class="input__label input__label--name" for="">
+										<div>Телефон</div>
+										<input class="input__name" type="text">
+									</label> 
 								</div>
 								<div class="input__street">
-									<input class="street__input" type="text">
+									<label class="input__label" for="">
+										<div>Телефон</div>
+										<input class="street__input" type="text">
+									</label>
 								</div>
 								<div class="input__home">
-									<input class="home__input" type="text">
-									<input class="home__input" type="text">
-									<input class="home__input" type="text">
-									<input class="home__input" type="text">
+									<label class="input__label" for="">
+										<div>Дом</div>
+										<input class="home__input" type="text">
+									</label>
+									<label class="input__label" for="">
+										<div>Корпус</div>
+										<input class="home__input" type="text">
+									</label>
+									<label class="input__label" for="">
+										<div>Квартира</div>
+										<input class="home__input" type="text">
+									</label>
+									<label class="input__label" for="">
+										<div>Этаж</div>
+										<input class="home__input" type="text">
+									</label>			
 								</div>
 							</div>
 							<div class="form__comment">
-								<textarea class="comment__text" name="" id="" cols="30" rows="10"></textarea>
+								<label class="input__label" for="">
+									<div>Комментарий</div>
+									<textarea class="comment__text" name="" id="" cols="30" rows="10"></textarea>
+								</label>
 								<div class="form__radio">
-										<input checked="checked" class="radio__radiobutton" type="radio" name="" id="radioOne"><label class="form__label" for="radioOne">Потребуется сдача</label>
-										<input class="radio__radiobutton" type="radio" name="" id="radioTwo"><label class="form__label" for="radioTwo">Оплата по карте</label>
+									<input checked="checked" class="radio__radiobutton" type="radio" name="" id="radio-One"><label class="form__label" for="radio-One">Потребуется сдача</label>
+									<input class="radio__radiobutton" type="radio" name="" id="radio-Two"><label class="form__label" for="radio-Two">Оплата по карте</label>
 								</div>
 								<div class="form__check">
-									<label for="checkOne" class="form__label"><input class="check__checkbox" type="checkbox" name="" id="checkOne">Не перезванивать</label>
+									<input class="check__checkbox" type="checkbox" name="" id="check-One"><label for="check-One" class="form__label--checkbox">Не перезванивать</label>
+								</div>
+								<div class="form__button">
+									<div class="button__link"><a class="order-link form__order-link" href="#seven">заказать</a></div>
+									<div class="button__link"><a class="form__clear-link" href="#seven">Очистить</a></div>
 								</div>
 							</div>
 						</form>
@@ -276,25 +302,25 @@
 						   </svg><a class="text-two__link" href="tel:+78123771377"> +7 (812) 377-13-77</a></div>
 						</div>
 						<div class="footer__social">
-						<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 126 72">
-								<use xlink:href="#vk">
-								</use>
-							</svg>
-						</a>
-						<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 36.711 36.711">
-								<use xlink:href="#fb">
-								</use>
-							</svg>
-						</a>
-							<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 37.453 31.21">
-								<use xlink:href="#tw">
-								</use>
+							<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 126 72">
+									<use xlink:href="#vk">
+									</use>
 								</svg>
 							</a>
-							<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 36.663 36.664">
-								<use xlink:href="#inst">
-								</use>
-							</svg>
+							<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 36.711 36.711">
+									<use xlink:href="#fb">
+									</use>
+								</svg>
+							</a>
+								<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 37.453 31.21">
+									<use xlink:href="#tw">
+									</use>
+									</svg>
+								</a>
+								<a class="sicial__link" href="#"><svg class="icon" viewBox="0 0 36.663 36.664">
+									<use xlink:href="#inst">
+									</use>
+								</svg>
 							</a>
 						</div>
 					</footer>

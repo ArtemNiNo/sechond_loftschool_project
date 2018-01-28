@@ -20,22 +20,46 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	filter: grayscale(100%);
+	@include tablets {
+		width: 50%;
+		height: 25%;
+		display: flex;
+		text-align: center;
+		align-content: center;
+		justify-content: center;
+    }
 }
 .comment__comments:nth-child(1) {
 	background: url(../img/content/photo8.jpg) 50% 30% no-repeat;
 	background-size: cover;
+	@include tablets {
+		background: url(../img/content/photo8.jpg) 50% 50% no-repeat;
+		background-size: cover;
+    }
 }
 .comment__comments:nth-child(2) {
 	background: url(../img/content/photo7.jpg) center no-repeat;
 	background-size: cover;
+	@include tablets {
+		background: url(../img/content/photo7.jpg) 50% 10% no-repeat;
+		background-size: cover;
+    }
 }
 .comment__comments:nth-child(3) {
 	background: url(../img/content/photo6.jpg) 65% 15% no-repeat;
 	background-size: 300%;
+	@include tablets {
+		background: url(../img/content/photo6.jpg) 60% 20% no-repeat;
+		background-size: 200%;
+    }
 }
 .comment__comments:nth-child(4) {
 	background: url(../img/content/photo1.jpg) 80% 100% no-repeat;
 	background-size: cover;
+	@include tablets {
+		background: url(../img/content/photo1.jpg) 0% 0% no-repeat;
+		background-size: cover;
+    }
 }
 .comment__comments:nth-child(5) {
 	background: url(../img/content/photo5.jpg) center no-repeat;
@@ -56,31 +80,47 @@
 .comments__button {
 	background: #2f3234;
 	text-align: center;
-	padding: 14px 15px 14px 20px;
-	border-radius: 5px;
+	padding: rem(14px) rem(15px) rem(14px) rem(20px);
+	border-radius: rem(5px);
 	box-sizing: border-box;
 	color: white;
 	cursor: pointer;
-	font-size: 13px;
+	font-size: rem(13px);
 	text-transform: uppercase;
-    font-family: 'ubuntumedium';
+	font-family: 'ubuntumedium';
+	@include tablets {
+		margin: 0 auto;
+    }
     &:hover {
         background: #1f2122;
     }
 }
 .comments__caption {
     font-family: 'gagalinregular';
-    font-size: 14px;
+    font-size: rem(14px);
     color: white;
     text-align: left;
-    margin-bottom: 15px;
+	margin-bottom: rem(15px);
+	@include phones {
+		font-size: rem(24px);
+    }	
+	@include tablets {
+		margin: 0 auto;
+		margin-bottom: 10px;
+    }
 }
 .comments__comment-text {
 	color: white;
     font-family: 'ubuntulight';
-    font-size: 14px;
-    margin-bottom: 10px;
-    line-height: 1.5;
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+	line-height: 1.5;
+	@include phones {
+		display: none;
+    }	
+	@include tablets {
+		line-height: 2;
+    }
 }
 .filter {
 	position: absolute;

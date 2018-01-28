@@ -2,6 +2,8 @@
     background: url(../img/bg/bg4.jpg) 50% 0 no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 .comand__right-content {
     position: relative;
@@ -10,33 +12,75 @@
     z-index: 3;
     color: white;
     display: flex;
-    float: right;
-    padding-left: 100px;
-    padding-right: 100px;
+    justify-content: center;
     background-color: rgba($dark, $alpha: .9);
+    padding-left: rem(100px);
+    padding-right: rem(80px);
+    @include tablets {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.comand__continer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    @include tablets {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        width: 50%;
+        transform: translateX(-30px);
+    }
+}
+.comand__list {
+    @include tablets {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
 }
 .section__title--comand {
     font-weight: 100;
+    margin-bottom: rem(30px);
+    @include phones {
+        font-size: rem(50px);
+    }
 }
 .comand__item {
     font-family: 'gagalinregular';
     font-weight: 100;
+    font-size: rem(14px);
+    @include tablets {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
     cursor: pointer;
 }.svg_com {
     transform: scale(1);
     transform-origin: 50%;
     transform: rotateX(180deg);
-    margin-right: 5px;
+    margin-right: rem(5px);
     &:hover {
         transform: rotateX(360deg);
         transition: .3s;
     }
 }
 .comand__item {
-    height: 20px;
+    height: rem(20px);
     transition: .3s;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+    @include phones {
+        height: rem(30px);
+    }
     &:hover {
         color: $yellow;
         transition: .3s;
@@ -77,23 +121,39 @@
     transition: .3s;
 }
 .comand__img {
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     border-radius: 100%;
     visibility: hidden;
 }
+.comand__item {
+    margin-bottom: 25px;
+}
+.comand__link {
+    @include phones {
+        font-size: rem(25px);
+    }
+}
 .comand__container-img {
-    width: 80px;
-    height: 80px;
-    margin-top: 20px;
+    width: rem(80px);
+    height: rem(80px);
+    margin-top: rem(20px);
     background: url(../img/content/face.jpg) 65% 0 no-repeat;
     background-size: cover;
     border-radius: 50%;
-    margin-right: 10px;
-    margin-left: 40px;
+    margin-right: rem(10px);
+    margin-left: rem(40px);
+    @include tablets {
+        margin: 0 auto;
+        margin-bottom: rem(10px);
+        margin-top: rem(10px);
+    }
 }
 .comand__undercaption {
     font-family: 'ubuntubold';
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
 }
 .text__undertext {
     font-family: 'ubuntulight';
@@ -102,6 +162,12 @@
     display: flex;
     align-content: flex-start;
     flex-direction: row;
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
 }
 .text {
     display: flex;

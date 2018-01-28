@@ -2,43 +2,66 @@
     background: url(../img/bg/bg2.jpg) center no-repeat;
     background-size: cover;
     display: flex;
+    @include phones {
+        padding-top: rem(35px);
+    }
     .best__caption {
         color: $dark;
         font-weight: 300;
-        font-size: 72px;
+        font-size: rem(72px);
         font-family: 'gagalinregular';
-        margin-bottom: 40px;
-        transform: translate(0, -45px);
+        margin-bottom: rem(40px);
+        transform: translate(0, rem(-45px));
+        @include phones {
+            margin-bottom: rem(70px);
+        }
     }
     .best__features {
     display: flex;
     text-align: center;
-    transform: translate(0, -55px);
+    transform: translate(0, rem(-55px));
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
     .features__block {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 33.33%;
+        @include phones {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            width: 100%;
+            margin-bottom: rem(25px);
+        }
         &:first-child {
-            transform: translate(0, -10px);
+            transform: translate(0, rem(-10px));
         }
     }
 }
 }
-
+.features__underblock {
+    @include phones {
+        margin-right: rem(20px);
+        margin-bottom: rem(20px);
+    }
+}
 .features__undercaption {
 	color: #2f3234;
-	font-size: 24.12px;
+	font-size: rem(24.12px);
     font-family: 'lifehackmedium';
     align-self: center;
 }
 .features__block:nth-child(2) {
-	margin: 0 20px 0 20px;
+	margin: 0 rem(20px) 0 rem(20px);
 }
 .features__underblock {
 	color: #6e6f6f;
-	font-size: 14.01px;
+	font-size: rem(14.01px);
     font-family: 'ubuntulight';
     line-height: 1.6;
 }
