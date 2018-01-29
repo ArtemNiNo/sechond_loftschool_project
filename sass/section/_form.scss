@@ -1,61 +1,48 @@
 .section__form {
     background: url(../img/bg/bg7.jpg) center no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    @include tablets {
+        padding: 0 rem(100px) 0 rem(100px);
+    }
     @include phones {
-        padding-top: rem(66px);
-        padding-bottom: rem(60px);
+        padding: 0 20px;
     }
 }
 .section__title--form {
     text-align: center;
-    font-weight: 100;
-    margin-top: 0;
-    padding-top: 0;
 }
 .form__form {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-content: center;
     @include tablets {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-content: center;
     }
 }
 .form__input {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    @include tablets {
-        margin: 0 auto;
-        margin-top: rem(50px);
-    }
+    width: 100%;
 }
 .input__name-phone {
     display: flex;
-    margin-bottom: rem(20px);
+    flex-wrap: nowrap;
+    @include tablets {
+        margin: 0 auto;
+        width: 100%;
+    }
     .input__name {
-        max-width: rem(220px);
-        width: rem(220px);
-        max-height: rem(40px);
+        width: 100%;
         border-radius: rem(5px);
         padding: rem(10px) rem(20px) rem(10px) rem(20px);
         box-sizing: border-box;
         outline: none;
-        border: rem(.5px) solid lightgray;
-        &:first-child {
-            margin-right: rem(20px);
-        }
+        border: none;
         &:focus {
             border: rem(2px) solid $yellow;
             box-sizing: border-box;
@@ -63,41 +50,66 @@
     }
 }
 .input__label--name {
-    &:first-child {
-        margin-right:rem(20px);
+    @include tablets {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+.input__name:nth-child(1) {
+    @include tablets {
+        margin-right: 0;
     }
 }
 .input__label {
     color: white;
-    margin-bottom: rem(5px);
+    margin-right: 20px;
+    flex-wrap: nowrap;
 }
-.street__input {
-    max-width: rem(460px);
-    width: rem(460px);
-    max-height: rem(40px);
-    border-radius: rem(5px);
-    padding: rem(10px) rem(20px) rem(10px) rem(20px);
-    box-sizing: border-box;
-    outline: none;
-    border: rem(.5px) solid lightgray;
-    margin-bottom: rem(20px);
-    &:focus {
-        border: rem(2px) solid $yellow;
+.input__street {
+    margin-bottom: 20px;
+    @include tablets {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .street__input {
+        width: 100% - 4%;
+        border-radius: rem(5px);
+        padding: rem(10px) rem(20px);
         box-sizing: border-box;
+        outline: none;
+        border: none;
+        margin-bottom: rem(20px);
+        @include tablets {
+            margin: 0 auto;
+        }
+        @include tablets {
+            width: 100% - 4%;
+        }
+        @include phones {
+            width: 100% - 6%;
+        }
+        &:focus {
+            border: rem(2px) solid $yellow;
+            box-sizing: border-box;
+        }
     }
 }
 .input__home {
     display: flex;
     flex-wrap: nowrap;
+    @include tablets {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .home__input {
-        max-width: rem(100px);
-        min-height: rem(40px);
+        width: 100%;
         border-radius: rem(5px);
         padding: rem(10px) rem(20px) rem(10px) rem(20px);
         box-sizing: border-box;
         outline: none;
-        border: rem(.5px) solid lightgray;
-        margin-right: rem(20px);
+        border: none;
         &:focus {
             border: rem(2px) solid $yellow;
             box-sizing: border-box;
@@ -107,20 +119,20 @@
 .form__comment {
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
+    width: 100%;
     @include tablets {
         margin: 0 auto;
     }
 }
 .comment__text {
-    width: rem(460px);
-    max-height: rem(110px);
+    width: 100%;
+    resize: none;
+    height: rem(120px);
     padding: rem(10px) rem(20px) rem(10px) rem(20px);
     outline: none;
     border-radius: rem(5px);
     border: rem(.5px) solid lightgray;
     @include tablets {
-        margin-left: rem(-20px);
     }
     &:focus {
         border: rem(2px) solid $yellow;

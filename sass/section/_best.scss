@@ -2,6 +2,8 @@
     background: url(../img/bg/bg2.jpg) center no-repeat;
     background-size: cover;
     display: flex;
+    justify-content: center;
+    align-content: center;
     @include phones {
         padding-top: rem(35px);
     }
@@ -10,16 +12,28 @@
         font-weight: 300;
         font-size: rem(72px);
         font-family: 'gagalinregular';
-        margin-bottom: rem(40px);
-        transform: translate(0, rem(-45px));
+        text-align: center;
         @include phones {
             margin-bottom: rem(70px);
+        }
+    }
+.best__container {
+        max-width: rem(940px);
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include phones {
+            width: 95%;
+        }
+        @include tablets {
+            width: 95%;
         }
     }
     .best__features {
     display: flex;
     text-align: center;
-    transform: translate(0, rem(-55px));
     @include phones {
         display: flex;
         flex-direction: column;
@@ -30,7 +44,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 33.33%;
         @include phones {
             display: flex;
             flex-direction: row;

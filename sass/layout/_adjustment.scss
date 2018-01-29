@@ -1,52 +1,34 @@
 * {
-    transition: .3s;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 .wrapper {
     width: 100%;
     height: 100%;
     position: relative;
-    min-height: rem(853px);
     .main-content {
         height: 100%;
-        min-height: 100%;
+        width: 100%;
         .section {
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.31);
-            min-width: rem(940px);
             width: 100%;
-            min-height: rem(900px);
+            background-color: rgba(0, 0, 0, 0.31);
+            min-height: rem(650px);
             @include phones {
-                width: 100%;
-                height: 100vh;
-                max-width: rem(480px);
-                max-height: rem(800px);
+                height: rem(800px);
             }
             @include tablets {
-                width: 100%;
-                height: 100vh;
-                max-width: rem(768px);
-                max-height: rem(1024px);
+                height: rem(1024px);
             }
             .container {
                 max-width: rem(940px);
                 width: 95%;
                 margin: 0 auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
                 @include phones {
                     width: 95%;
-                    height: 100vh;
-                    max-width: rem(480px);
-                    max-height: rem(800px);
                 }
                 @include tablets {
                     width: 95%;
-                    height: 100vh;
-                    max-width: rem(768px);
-                    max-height: rem(1024px);
                 }
             }
         }
@@ -75,7 +57,10 @@
 	position: fixed;
 	right: rem(50px);
 	top: rem(90px);
-	z-index: 9999999;
+    z-index: 9999999;
+    @include tablets {
+        display: none;
+    }
 }
 .nav-bar__link {
 	margin-bottom: rem(1px);

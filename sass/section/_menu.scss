@@ -10,6 +10,10 @@
     left: rem(90px);
     color: white;
     letter-spacing: 2px;
+    @include phones {
+        top: rem(30px);
+        left: rem(10px);
+    }
 }
 .menu__right {
     position: absolute;

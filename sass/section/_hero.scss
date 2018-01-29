@@ -1,10 +1,9 @@
 .hero {
-    padding-top: rem(10px);
+    padding-top: rem(15px);
     background: url(../img/bg/bg1.jpg) center no-repeat;
     background-size: cover;
     position: relative;
     &:before {
-        content: "<div></div>";
         width: 100%;
         height: 100%;
         position: absolute;
@@ -27,20 +26,15 @@
             align-items: center;
             z-index: 2;
             .nav {
-                .nav__list {
-                    margin: 0;
-                    padding: 0;
-                }
                 .nav__item {
                     display: inline-block;
-                    vertical-align: middle;
-                    white-space: nowrap;
                     &:after {
                         display: inline-block;
                         vertical-align: middle;
                         content: ' ';
                         @include circle(rem(4px), #fff);
-                        margin: 0 rem(15px);
+                        margin-left: rem(12px);
+                        margin-right: rem(12px);
                     }
                     &:last-child:after {
                         display: none;
@@ -49,9 +43,9 @@
                         color: #fff;
                         text-decoration: none;
                         display: inline-block;
-                        font-weight: 400;
                         text-transform: uppercase;
                         font-size: rem(13px);
+                        font-family: "ubuntumedium";
                         &:hover {
                             text-decoration: underline;
                         }
@@ -61,8 +55,12 @@
         }
     }
 }
+.header {
+    position: relative;
+}
 .header__menu {
-    margin-left: 18%;
+    position: absolute;
+    right: 14%;
     @include tablets {
         display: none;
     }
@@ -71,7 +69,6 @@
     z-index: 2;
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     flex-grow: 1;
     padding-bottom: 15%;
@@ -90,16 +87,17 @@
         text-align: center;
     }
 }
-.hero__img, .hero__description {
-    flex-basis: 50%;
-    display: flex;
+.hero__img {
+    width: 100%;
 }
 .hero__description {
     flex-direction: column;
     justify-content: center;
-    padding-top: rem(60px);
+    margin-top: rem(60px);
     @include tablets {
         text-align: center;
+        width: 100%;
+        margin: 0 auto;
     }
     .hero__description-text {
         color: #fff;
@@ -107,10 +105,10 @@
         font-weight: 100;
         line-height: 1;
         font-family: 'lifehackmedium';
-        transform: translate(0, rem(10px));
-        letter-spacing: rem(-2px);
+        letter-spacing: rem(-1px);
         @include tablets {
-            width: 300px;
+            margin: 0 auto;
+            width: 95%;
         }
     }
 }
@@ -125,5 +123,18 @@
 .arrow-scroll__link {
     svg {
         transform: scale(3);
+    }
+}
+.header__burger-menu {
+    display: none;
+    @include tablets {
+        display: block;
+    }
+}
+.order-link--hero {
+    @include tablets {
+        position: absolute;
+        right: 10%;
+        top: 25%;
     }
 }
