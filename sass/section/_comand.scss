@@ -21,6 +21,8 @@
         text-align: center;
         justify-content: center;
         align-content: center;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 .comand__continer {
@@ -34,7 +36,9 @@
         align-content: center;
         flex-direction: column;
         width: 50%;
-        transform: translateX(-30px);
+    }
+    @include phones {
+        width: 100%;
     }
 }
 .comand__list {

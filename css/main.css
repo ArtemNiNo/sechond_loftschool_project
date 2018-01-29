@@ -725,7 +725,9 @@ ul {
       -ms-flex-pack: center;
       justify-content: center;
       -ms-flex-line-pack: center;
-      align-content: center; } }
+      align-content: center;
+      padding-right: 0;
+      padding-left: 0; } }
 
 .comand__continer {
   display: -webkit-box;
@@ -754,10 +756,10 @@ ul {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      width: 50%;
-      -webkit-transform: translateX(-30px);
-      -ms-transform: translateX(-30px);
-      transform: translateX(-30px); } }
+      width: 50%; } }
+  @media screen and (max-width: 480px) {
+    .comand__continer {
+      width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .comand__list {
