@@ -27,7 +27,7 @@
 		text-align: center;
 		align-content: center;
 		justify-content: center;
-    }
+	}
 }
 .comment__comments:nth-child(1) {
 	background: url(../img/content/photo8.jpg) 50% 30% no-repeat;
@@ -103,6 +103,7 @@
 	margin-bottom: rem(15px);
 	@include phones {
 		font-size: rem(24px);
+		text-align: center;	
     }	
 	@include tablets {
 		margin: 0 auto;
@@ -121,17 +122,6 @@
 	@include tablets {
 		line-height: 2;
     }
-}
-.filter {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: black;
-	opacity: 0;
-	z-index: 1;
-	transition: .3s;
 }
 .comments__caption, .comments__comment-text, .comments__button {
 	opacity: 0;

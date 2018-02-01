@@ -13,6 +13,9 @@
 }
 .section__title--form {
     text-align: center;
+    @include phones {
+        font-size: rem(56px);
+    }
 }
 .form__form {
     width: 100%;
@@ -147,6 +150,7 @@
         margin: 0 auto;
         margin-bottom: 20px;
         margin-top: 20px;
+        text-align: right;
     } 
 }
 .radio__radiobutton {

@@ -88,6 +88,9 @@
 }
 .menu__content--active {
     width: rem(540px);
+    @include phones {
+        width: rem(250px);
+    }
 }
 .menu__content--active .menu__title {
     position: relative;
@@ -95,6 +98,10 @@
     left: rem(-240px);
     text-align: right;
     color: $yellow;
+    @include phones {
+        top: rem(420px);
+        left: rem(-80px);
+    }
 }
 .menu__content--active .menu__text {
     transform: translate(0, -160px);
@@ -103,14 +110,18 @@
     overflow: hidden;
     display: flex;
     position: relative;
+    @include phones {
+        padding: 0 0 0 rem(80px);
+        top: rem(300px);
+    }
 }
 .menu__title {
-    transform: rotateZ(90deg);
+    transform: rotateZ(270deg);
     white-space: nowrap;
     position: relative;
     font-weight: 100;
     text-align: right;
-    top: 320px;
+    top: 620px;
     cursor: pointer;
 }
 
