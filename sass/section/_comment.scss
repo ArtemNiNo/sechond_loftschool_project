@@ -1,4 +1,4 @@
-.comment__container {
+.section--comment {
 	display: flex;
 	width: 100%;
 	height: 100%;
@@ -8,9 +8,7 @@
 }
 .comment__comments {
 	position: relative;
-	padding-top: 3%;
-	padding-left: 3%;
-	padding-right: 3%;
+	padding: 5%;
 	box-sizing: border-box;
 	background: gray;
 	width: 25%;
@@ -27,6 +25,7 @@
 		text-align: center;
 		align-content: center;
 		justify-content: center;
+		padding: 5%;
 	}
 }
 .comment__comments:nth-child(1) {
@@ -128,8 +127,17 @@
 	transition: .3s;
 	z-index: 2;
 }
-.comment__comments:hover .filter {
-	opacity: .4;
+.comment__comments:hover {
+	&:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: black;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: .6;
+	}
 }
 .comment__comments:hover .comments__caption {
 	opacity: 1;

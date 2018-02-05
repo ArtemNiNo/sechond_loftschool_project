@@ -98,10 +98,25 @@
     left: rem(-240px);
     text-align: right;
     color: $yellow;
+    @include tablets {
+        top: rem(380px);
+    }
     @include phones {
         top: rem(420px);
         left: rem(-80px);
     }
+}
+.menu__content--active:nth-child(1) {
+    background: url(../img/content/menu1.jpg) left no-repeat;
+    background-size: 80px 100%;
+}
+.menu__content--active:nth-child(2) {
+    background: url(../img/content/menu2.jpg) left no-repeat;
+    background-size: 80px 100%;
+}
+.menu__content--active:nth-child(3) {
+    background: url(../img/content/menu3.jpg) left top no-repeat;
+    background-size: 80px 100%;
 }
 .menu__content--active .menu__text {
     transform: translate(0, -160px);
@@ -114,6 +129,9 @@
         padding: 0 0 0 rem(80px);
         top: rem(300px);
     }
+    @include tablets {
+        top: rem(120px);
+    }
 }
 .menu__title {
     transform: rotateZ(270deg);
@@ -123,6 +141,9 @@
     text-align: right;
     top: 620px;
     cursor: pointer;
+    @include phones {
+        top: rem(520px);
+    }
 }
 
 .menu__text {
@@ -138,7 +159,7 @@
         content: "";
         position: absolute;
         top: 0;
-        left: 0;
+        left: rem(80px);
         background: $dark;
         background-size: cover;
         width: rem(460px) + rem(80px);
@@ -151,7 +172,7 @@
         content: "";
         position: absolute;
         top: 0;
-        left: 0;
+        left: rem(80px);
         background: $dark;
         background-size: cover;
         width: rem(460px) + rem(80px);
@@ -164,7 +185,7 @@
         content: "";
         position: absolute;
         top: 0;
-        left: 0;
+        left: rem(80px);
         background: $dark;
         background-size: cover;
         width: rem(460px) + rem(80px);

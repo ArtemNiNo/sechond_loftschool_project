@@ -65,6 +65,9 @@
         margin-bottom: rem(20px);
     }
 }
+.features__underblock:nth-child(2) {
+    margin-bottom: 0;
+}
 .features__undercaption {
 	color: #2f3234;
 	font-size: rem(24.12px);

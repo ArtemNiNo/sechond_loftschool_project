@@ -17,7 +17,7 @@
         font-size: rem(56px);
     }
 }
-.form__form {
+.form {
     width: 100%;
     height: 100%;
     display: flex;
@@ -45,10 +45,9 @@
         padding: rem(10px) rem(20px) rem(10px) rem(20px);
         box-sizing: border-box;
         outline: none;
-        border: none;
+        border: 2px solid transparent;
         &:focus {
-            border: rem(2px) solid $yellow;
-            box-sizing: border-box;
+        border: 2px solid $yellow;
         }
     }
 }
@@ -81,7 +80,10 @@
         padding: rem(10px) rem(20px);
         box-sizing: border-box;
         outline: none;
-        border: none;
+        border: 2px solid transparent;
+        &:focus {
+        border: 2px solid $yellow;
+        }
         margin-bottom: rem(20px);
         @include tablets {
             margin: 0 auto;
@@ -91,10 +93,6 @@
         }
         @include phones {
             width: 100% - 6%;
-        }
-        &:focus {
-            border: rem(2px) solid $yellow;
-            box-sizing: border-box;
         }
     }
 }
@@ -110,12 +108,10 @@
         width: 100%;
         border-radius: rem(5px);
         padding: rem(10px) rem(20px) rem(10px) rem(20px);
-        box-sizing: border-box;
         outline: none;
-        border: none;
+        border: 2px solid transparent;
         &:focus {
-            border: rem(2px) solid $yellow;
-            box-sizing: border-box;
+        border: 2px solid $yellow;
         }
     }
 }

@@ -16,6 +16,7 @@
     background-color: rgba($dark, $alpha: .9);
     padding-left: rem(100px);
     padding-right: rem(80px);
+    padding-top: rem(110px);
     @include tablets {
         width: 100%;
         text-align: center;
@@ -28,8 +29,6 @@
 .comand__continer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     @include tablets {
         display: flex;
         justify-content: center;
