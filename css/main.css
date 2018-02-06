@@ -1462,6 +1462,36 @@ button {
 .composition__table tr td:nth-child(3) {
   padding-left: 3.75rem; }
 
+.slider__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative; }
+
+.slider__arrow {
+  cursor: pointer; }
+
+.slider__content {
+  position: relative;
+  margin-right: 3.125rem;
+  left: 3.125rem;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  @media screen and (max-width: 768px) {
+    .slider__content {
+      left: 23%;
+      margin-right: 18.75rem; } }
+  @media screen and (max-width: 480px) {
+    .slider__content {
+      left: 7.5rem;
+      margin-right: 12.5rem; } }
+
 .section__form {
   background: url(../img/bg/bg7.jpg) center no-repeat;
   background-size: cover;

@@ -177,3 +177,26 @@
 .composition__table tr td:nth-child(3) {
     padding-left: rem(60px);
 }
+.slider__box {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+}
+.slider__arrow {
+    cursor: pointer;
+}
+.slider__content {
+    position: relative;
+    margin-right: rem(50px);
+    left: rem(50px);
+    transition: .3s;
+    @include tablets {
+        left: 23%;
+        margin-right: rem(300px);
+    }
+    @include phones {
+        left: rem(120px);
+        margin-right: rem(200px);
+    }
+}
