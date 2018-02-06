@@ -8,7 +8,8 @@
         padding: 0 rem(100px) 0 rem(100px);
     }
     @include phones {
-        padding: 0 20px;
+        padding-left: rem(35px);
+        padding-right: rem(10px);
     }
 }
 .section__title--form {

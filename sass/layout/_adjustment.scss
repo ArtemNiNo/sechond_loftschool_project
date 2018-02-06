@@ -59,9 +59,6 @@ button {
 	right: rem(50px);
 	top: rem(90px);
     z-index: 9999999;
-    @include tablets {
-        display: none;
-    }
 }
 .nav-bar__link {
 	margin-bottom: rem(1px);

@@ -2,14 +2,13 @@
     background: url(../img/bg/bg2.jpg) center no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: center;
     .best__caption {
         color: $dark;
         font-weight: 300;
         font-size: rem(72px);
         font-family: 'gagalinregular';
         text-align: center;
+        margin-bottom: rem(35px);
     }
 .best__container {
         max-width: rem(940px);
@@ -28,9 +27,6 @@
     .best__features {
     display: flex;
     text-align: center;
-    flex-basis: 300px;
-    align-items: center;
-    justify-content: center;
     @include phones {
         display: flex;
         flex-direction: column;
@@ -39,37 +35,61 @@
     .features__block {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        &:nth-child(2) {
+            margin: 0 20px 0 20px;
+            @include phones {
+                margin: 0;
+            }
+        }
         @include phones {
             display: flex;
             flex-direction: row;
             text-align: left;
-            width: 100%;
         }
     }
 }
-}
-.features__underblock:nth-child(2) {
-    margin-bottom: 0;
 }
 .features__undercaption {
 	color: #2f3234;
 	font-size: rem(24.12px);
     font-family: 'lifehackmedium';
 }
-.features__block:nth-child(2) {
-	margin: 0 rem(20px) 0 rem(20px);
-}
 .features__underblock {
 	color: #6e6f6f;
 	font-size: rem(14.01px);
     font-family: 'ubuntulight';
     line-height: 1.6;
+    margin-bottom: rem(30px);
+    @include phones {
+        margin-bottom: 0;
+    }
 }
-.features__block:nth-child(3) {
-    transform: translateY(20px);
+.features__underblock:nth-child(1) {
+    display: flex;
+    justify-content: center;
 }
 .features__underblock--svg {
-    margin-right: rem(20px);
+    width: rem(100px);
+    height: rem(90px);
+    @include phones {
+        width: rem(180px);
+        height: rem(180px);
+        margin-right: rem(20px);
+    }
+}
+.features__block:nth-child(1) .features__underblock--svg {
+    background: url(../img/icons/meat.svg) center no-repeat;
+    background-size: contain;
+    
+}
+.features__block:nth-child(2) .features__underblock--svg {
+    background: url(../img/icons/hand.svg) center no-repeat;
+    background-size: contain;
+    
+}
+.features__block:nth-child(3) .features__underblock--svg {
+    background: url(../img/icons/natural.svg) center no-repeat;
+    background-size: contain;
+    
 }

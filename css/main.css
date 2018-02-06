@@ -143,9 +143,6 @@ button {
   right: 3.125rem;
   top: 5.625rem;
   z-index: 9999999; }
-  @media screen and (max-width: 768px) {
-    .nav-bar {
-      display: none; } }
 
 .nav-bar__link {
   margin-bottom: 0.0625rem;
@@ -428,19 +425,14 @@ button {
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  display: flex; }
   .section--best .best__caption {
     color: #2f3234;
     font-weight: 300;
     font-size: 4.5rem;
     font-family: 'gagalinregular';
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 2.1875rem; }
   .section--best .best__container {
     max-width: 58.75rem;
     width: 95%;
@@ -465,15 +457,7 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center;
-    -ms-flex-preferred-size: 300px;
-    flex-basis: 300px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    text-align: center; }
     @media screen and (max-width: 480px) {
       .section--best .best__features {
         display: -webkit-box;
@@ -492,12 +476,14 @@ button {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+      .section--best .best__features .features__block:nth-child(2) {
+        margin: 0 20px 0 20px; }
+        @media screen and (max-width: 480px) {
+          .section--best .best__features .features__block:nth-child(2) {
+            margin: 0; } }
       @media screen and (max-width: 480px) {
         .section--best .best__features .features__block {
           display: -webkit-box;
@@ -507,33 +493,51 @@ button {
           -webkit-box-direction: normal;
           -ms-flex-direction: row;
           flex-direction: row;
-          text-align: left;
-          width: 100%; } }
-
-.features__underblock:nth-child(2) {
-  margin-bottom: 0; }
+          text-align: left; } }
 
 .features__undercaption {
   color: #2f3234;
   font-size: 1.5075rem;
   font-family: 'lifehackmedium'; }
 
-.features__block:nth-child(2) {
-  margin: 0 1.25rem 0 1.25rem; }
-
 .features__underblock {
   color: #6e6f6f;
   font-size: 0.87562rem;
   font-family: 'ubuntulight';
-  line-height: 1.6; }
+  line-height: 1.6;
+  margin-bottom: 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .features__underblock {
+      margin-bottom: 0; } }
 
-.features__block:nth-child(3) {
-  -webkit-transform: translateY(20px);
-  -ms-transform: translateY(20px);
-  transform: translateY(20px); }
+.features__underblock:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .features__underblock--svg {
-  margin-right: 1.25rem; }
+  width: 6.25rem;
+  height: 5.625rem; }
+  @media screen and (max-width: 480px) {
+    .features__underblock--svg {
+      width: 11.25rem;
+      height: 11.25rem;
+      margin-right: 1.25rem; } }
+
+.features__block:nth-child(1) .features__underblock--svg {
+  background: url(../img/icons/meat.svg) center no-repeat;
+  background-size: contain; }
+
+.features__block:nth-child(2) .features__underblock--svg {
+  background: url(../img/icons/hand.svg) center no-repeat;
+  background-size: contain; }
+
+.features__block:nth-child(3) .features__underblock--svg {
+  background: url(../img/icons/natural.svg) center no-repeat;
+  background-size: contain; }
 
 .section--comment {
   display: -webkit-box;
@@ -1476,7 +1480,8 @@ button {
       padding: 0 6.25rem 0 6.25rem; } }
   @media screen and (max-width: 480px) {
     .section__form {
-      padding: 0 20px; } }
+      padding-left: 2.1875rem;
+      padding-right: 0.625rem; } }
 
 .section__title--form {
   text-align: center; }
