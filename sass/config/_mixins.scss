@@ -15,7 +15,16 @@
         @content;
     }
 }
-
+@mixin smolPhones {
+    @media screen and (max-width: $smolPhones) {
+        @content;
+    }
+}
+@mixin smolestPhones {
+    @media screen and (max-width: $smolestPhones) {
+        @content;
+    }
+}
 @function rem($px) {
     @return $px / 16px + 0rem;
 }

@@ -42,53 +42,73 @@ toggleClass(cross, hiddenMenu, 'visible', 'all 0s');
 // Cлайдер
 const arrowLeft = document.querySelector('.arrow__left'),
       arrowRight = document.querySelector('.arrow__right'),
-      slider = document.querySelectorAll('.slider__content');
+      slider = document.querySelectorAll('.slider__content'),
+      slide = parseInt(getComputedStyle(document.querySelector('.slider__content')).width);
 
 arrowRight.addEventListener('click', function() {
     for (let i = 0; i < slider.length; i++) {
         let currentPosition = parseInt(getComputedStyle(slider[i]).left);
-        if (currentPosition > -1700) {
-            slider[i].style.left = currentPosition - 875 + 'px';
+        if (parseInt(getComputedStyle(document.body).width) <= 414 && currentPosition > -slide * 5) {
+            slider[i].style.left = currentPosition - slide + -150 + 'px';
             console.log(currentPosition);
         }
-        if (currentPosition == -1700) {
-            slider[i].style.left = -1700 + 'px';
+        else if (parseInt(getComputedStyle(document.body).width) < 414 && parseInt(getComputedStyle(document.body).width) <= 480 && currentPosition <= -824) {
+            slider[i].style.left = 0 + 'px';
         }
-        else if (parseInt(getComputedStyle(document.body).width) <= 480 && currentPosition > -607) {
-            slider[i].style.left = currentPosition - 420 + 'px';
+        if (parseInt(getComputedStyle(document.body).width) >= 414 && parseInt(getComputedStyle(document.body).width) <= 480 && currentPosition > -slide * 5) {
+            slider[i].style.left = currentPosition - slide + -150 + 'px';
+            console.log(currentPosition);
         }
-        else if (parseInt(getComputedStyle(document.body).width) <= 480 && currentPosition == -750) {
-            slider[i].style.left = -750 + 'px';
+        else if ( parseInt(getComputedStyle(document.body).width) >= 414 && parseInt(getComputedStyle(document.body).width) <= 480 && currentPosition <= -824) {
+            slider[i].style.left = 0 + 'px';
         }
-        else if (parseInt(getComputedStyle(document.body).width) <= 768 && currentPosition > -607) {
-            slider[i].style.left = currentPosition - 650 + 'px';
+
+        if (parseInt(getComputedStyle(document.body).width) > 480 && parseInt(getComputedStyle(document.body).width) <= 768 && currentPosition > -slide * 5) {
+            slider[i].style.left = currentPosition - slide + -185 + 'px';
+            console.log(currentPosition);
         }
-        else if (parseInt(getComputedStyle(document.body).width) <= 768 && currentPosition == -1138) {
-            slider[i].style.left = -1138 + 'px';
+        else if (parseInt(getComputedStyle(document.body).width) > 480 && parseInt(getComputedStyle(document.body).width) <= 768 && currentPosition <= -1142) {
+            slider[i].style.left = 40 + 'px';
+        }
+        if (currentPosition > -slide * 4 && parseInt(getComputedStyle(document.body).width) > 768) {
+            slider[i].style.left = currentPosition - slide + -60 + 'px';
+            console.log(currentPosition);
+        }
+        else if (currentPosition <= 824 && parseInt(getComputedStyle(document.body).width) > 768) {
+            slider[i].style.left = 50 + "px";
         }
     }
 });
 arrowLeft.addEventListener('click', function() {
     for (let i = 0; i < slider.length; i++) {
         let currentPosition = parseInt(getComputedStyle(slider[i]).left);
-        if (currentPosition < 1700) {
-            slider[i].style.left = currentPosition + 875 + 'px';
+        if ( parseInt(getComputedStyle(document.body).width) <= 414 && currentPosition < -slide) {
+            slider[i].style.left = currentPosition + slide + 150 + 'px';
             console.log(currentPosition);
         }
-        if (currentPosition == 50) {
-            slider[i].style.left = 50 + 'px';
+        else if (currentPosition <= 50 && parseInt(getComputedStyle(document.body).width) <= 414) {
+            slider[i].style.left = -slide*5 + -350 + "px";
         }
-        else if (parseInt(getComputedStyle(document.body).width) <= 480 && currentPosition < 90) {
-            slider[i].style.left = currentPosition + 420 + 'px';
+        if (parseInt(getComputedStyle(document.body).width) > 414 && parseInt(getComputedStyle(document.body).width) <= 480 && currentPosition < -slide) {
+            slider[i].style.left = currentPosition + slide + 150 + 'px';
+            console.log(currentPosition);
         }
-        else if (parseInt(getComputedStyle(document.body).width) <= 480 && currentPosition == 90) {
-            slider[i].style.left = 90 + 'px';
+        else if (currentPosition <= 100 && parseInt(getComputedStyle(document.body).width) <= 480 && parseInt(getComputedStyle(document.body).width) > 414) {
+            slider[i].style.left = -slide*5 + -320 + "px";
         }
-        else if (parseInt(getComputedStyle(document.body).width) <= 768 && currentPosition < 33) {
-            slider[i].style.left = currentPosition + 650 + 'px';
+        if (parseInt(getComputedStyle(document.body).width) > 480 && parseInt(getComputedStyle(document.body).width) <= 768 && currentPosition < -slide) {
+            slider[i].style.left = currentPosition + slide + 185 + 'px';
+            console.log(currentPosition);
         }
-        else if (parseInt(getComputedStyle(document.body).width) <= 768 && currentPosition == 162) {
-            slider[i].style.left = 162 + 'px';
+        else if (currentPosition <= 100 && parseInt(getComputedStyle(document.body).width) > 480 && parseInt(getComputedStyle(document.body).width) <= 768) {
+            slider[i].style.left = -slide*5 + -280 + "px";
+        }
+        if (parseInt(getComputedStyle(document.body).width) > 768 && currentPosition < 50) {
+            slider[i].style.left = currentPosition + slide + 60 + 'px';
+            console.log(currentPosition);
+        }
+        else if (currentPosition <= 50 && parseInt(getComputedStyle(document.body).width) > 768) {
+            slider[i].style.left = -slide*4 + -190 + "px";
         }
     }
 });

@@ -1472,6 +1472,9 @@ button {
   flex-direction: row;
   overflow: hidden;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .slider__box {
+      padding-left: 16%; } }
 
 .slider__arrow {
   cursor: pointer; }
@@ -1485,11 +1488,18 @@ button {
   transition: .3s; }
   @media screen and (max-width: 768px) {
     .slider__content {
-      left: 23%;
-      margin-right: 18.75rem; } }
+      margin-right: 180px; } }
   @media screen and (max-width: 480px) {
     .slider__content {
-      left: 7.5rem;
+      left: 1.25rem;
+      margin-right: 12.5rem; } }
+  @media screen and (max-width: 414px) {
+    .slider__content {
+      left: 0;
+      margin-right: 12.5rem; } }
+  @media screen and (max-width: 360px) {
+    .slider__content {
+      left: -20px;
       margin-right: 12.5rem; } }
 
 .section__form {
