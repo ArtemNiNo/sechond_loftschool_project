@@ -124,8 +124,6 @@ for(let i = 0; i < commentsButton.length; i++) {
 
     const overlay = document.createElement('div');
       overlay.classList.add('overlay');
-      overlay.style.transition = '2s';
-      overlay.style.bottom = '0';
 
     const overlayContent = document.createElement('div');
       overlayContent.classList.add('overlay__content');
@@ -151,9 +149,14 @@ for(let i = 0; i < commentsButton.length; i++) {
     overlayContent.appendChild(text);
     overlayClose.appendChild(closeIcon);
     document.body.appendChild(overlay);
-
+    setTimeout(function(){
+        overlay.style.opacity = '1';
+    }, 1)
     overlayClose.addEventListener('click', function() {
-        document.body.removeChild(overlay);
+        overlay.style.opacity = '0';
+        setTimeout(function(){
+            document.body.removeChild(overlay);
+        }, 290)
     })
     });
 }

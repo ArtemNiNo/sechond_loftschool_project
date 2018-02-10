@@ -79,14 +79,17 @@ button {
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10000;
+    opacity: 0;
+    transition: .3s;
 }
 .overlay__content  {
-    max-width: 460px;
+    max-width: rem(460px);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .9);
     padding: rem(20px) rem(20px) rem(55px) rem(20px);
