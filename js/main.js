@@ -112,3 +112,48 @@ arrowLeft.addEventListener('click', function() {
         }
     }
 });
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//Модальные окна
+const commentsButton = document.querySelectorAll('.comments__button');
+const commentText = document.querySelectorAll('.comments__comment-text');
+const commentName = document.querySelectorAll('.comments__caption');
+for(let i = 0; i < commentsButton.length; i++) {
+    commentsButton[i].addEventListener('click', function() {
+
+    const overlay = document.createElement('div');
+      overlay.classList.add('overlay');
+      overlay.style.transition = '2s';
+      overlay.style.bottom = '0';
+
+    const overlayContent = document.createElement('div');
+      overlayContent.classList.add('overlay__content');
+
+    const overlayClose = document.createElement('a');
+      overlayClose.classList.add('overlay__close');
+
+    const closeIcon = document.createElement('div');
+      closeIcon.classList.add('close', 'icon');
+
+    const name = document.createElement('h4');
+      name.classList.add('overlay__name');
+
+    const text = document.createElement('span');
+      text.classList.add('overlay__text');
+
+    text.textContent = commentText[i].textContent;
+    name.textContent = commentName[i].textContent;
+
+    overlay.appendChild(overlayContent);
+    overlayContent.appendChild(overlayClose);
+    overlayContent.appendChild(name);
+    overlayContent.appendChild(text);
+    overlayClose.appendChild(closeIcon);
+    document.body.appendChild(overlay);
+
+    overlayClose.addEventListener('click', function() {
+        document.body.removeChild(overlay);
+    })
+    });
+}

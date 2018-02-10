@@ -157,6 +157,71 @@ button {
 .nav-bar__link--active {
   background: url(../img/icons/el2.png) center no-repeat; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 10000; }
+
+.overlay__content {
+  max-width: 460px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.25rem 1.25rem 3.4375rem 1.25rem;
+  font-size: 0.875rem;
+  font-family: 'ubuntulight';
+  position: relative; }
+
+.overlay__name {
+  font-size: 0.875rem;
+  font-family: 'gagalinregular';
+  margin-bottom: 1.5625rem; }
+
+.overlay__close {
+  position: absolute;
+  right: 2.1875rem;
+  top: 1.5625rem;
+  cursor: pointer; }
+
+.close.icon {
+  color: #e25028;
+  position: absolute;
+  width: 18px;
+  height: 18px; }
+
+.close.icon:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-radius: 100px; }
+
+.close.icon:after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 3px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 100px; }
+
 .hero {
   padding-top: 0.3125rem;
   background: url(../img/bg/bg1.jpg) center no-repeat;
@@ -767,7 +832,7 @@ button {
   color: #e25028;
   font-family: 'ubuntubold'; }
 
-.icon {
+.social__icon {
   display: inline-block;
   vertical-align: middle;
   fill: white;
@@ -776,7 +841,7 @@ button {
   margin-left: 1rem;
   opacity: .5;
   margin-top: 0.875rem; }
-  .icon:hover {
+  .social__icon:hover {
     opacity: 1;
     -webkit-transition: .3s;
     -o-transition: .3s;
