@@ -27,6 +27,7 @@ ac(comandItem, numComandItem, 'comand__item--active');
 const burger = document.querySelector('.header__burger-menu'),
       cross = document.querySelector('.cross'),
       hiddenMenu = document.querySelector('.hidden-menu ');
+      navBar = document.querySelector('.nav-bar ');
 function toggleClass (button, changeableObject, classs, animation) {
     button.addEventListener('click', function() {
         changeableObject.classList.toggle(classs);
@@ -121,7 +122,7 @@ const commentText = document.querySelectorAll('.comments__comment-text');
 const commentName = document.querySelectorAll('.comments__caption');
 for(let i = 0; i < commentsButton.length; i++) {
     commentsButton[i].addEventListener('click', function() {
-
+        
     const overlay = document.createElement('div');
       overlay.classList.add('overlay');
 
@@ -149,9 +150,11 @@ for(let i = 0; i < commentsButton.length; i++) {
     overlayContent.appendChild(text);
     overlayClose.appendChild(closeIcon);
     document.body.appendChild(overlay);
+
     setTimeout(function(){
         overlay.style.opacity = '1';
     }, 1)
+
     overlayClose.addEventListener('click', function() {
         overlay.style.opacity = '0';
         setTimeout(function(){

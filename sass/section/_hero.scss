@@ -178,7 +178,6 @@
 .cross {
     width: 20px;
     height: 20px;
-    background: url(../img/icons/krest.png) center no-repeat;
     position: absolute;
     top: 30px;
     right: 20px;
@@ -188,7 +187,7 @@
     @include tablets {
         display: flex;
         position: absolute;
-        z-index: 2; //over
+        z-index: 1000; //over
         width: 100%;
         height: 100%;
         background: $dark;
@@ -198,14 +197,41 @@
         left: 0;
         height: 100%;
         .cross {
-            width: 20px;
-            height: 20px;
-            background: url(../img/icons/krest.png) center no-repeat;
-            cursor: pointer;
-            position: absolute;
-            top: 30px;
-            right: 20px;
             display: block;
+            .close.icon {
+                color: white;
+                position: absolute;
+                margin-top: 0;
+                margin-left: 0;
+                width: 21px;
+                height: 21px;
+                left: rem(-40px);
+                top: 0;
+                @include phones {
+                    left: rem(-10px);
+                    top: 0;
+                }
+              }
+              .close.icon:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                width: 25px;
+                height: 4px;
+                background-color: currentColor;
+                -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+              }
+              .close.icon:after {
+                content: '';
+                position: absolute;
+                top: 10px;
+                width: 25px;
+                height: 4px;
+                background-color: currentColor;
+                -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+              }
     }
         .nav__item {
             margin-bottom: 30px;
@@ -231,3 +257,39 @@
     background: url(../img/icons/logo.svg) center no-repeat;
     z-index: 3; //over
 }
+.menu.icon {
+    color: white;
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 10px;
+    width: 25px;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 100px;
+    right: rem(20px);
+    top: rem(-20px);
+    @include phones {
+        right: rem(0px);
+        top: rem(-25px);
+    }
+  }
+  .menu.icon:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 25px;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 100px;
+  }
+  .menu.icon:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 25px;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 100px;
+  }
