@@ -17,14 +17,12 @@
     font-size: rem(13px);
     line-height: 1.9;
     letter-spacing: rem(.3px);
+    position: absolute;
     @include phones {
         flex-direction: column;
         align-content: center;
         margin: 0 auto;
         justify-content: center;
-    }
-    @include tablets {
-        bottom: rem(-130px);
     }
 }
 .footer__contact {

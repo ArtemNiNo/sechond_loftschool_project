@@ -8,22 +8,23 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="icon" type="image/png" href="img/icons/logotip.png">
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU">
-	</script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src="js/myMap.js"></script>
 	<script src="js/whereI.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="main-content">
-			<section class="section hero">
+			<section class="section hero" data-index="1">
 				<h2 id="one" class="visually-hidden">Первая секция</h2>
 				<div class="container hero__container">
 					<header class="header">
 							<a class="header__logo logo" href="index.html">
 							</a>
 						<div class="header__menu">
-							<nav class="nav">
+							<nav class="nav" id="menu">
 								<ul class="nav__list">
 									<li class="nav__item"><a href="#two" class="nav__link">о нас</a></li>
 									<li class="nav__item"><a href="#three" class="nav__link">бургеры</a></li>
@@ -50,7 +51,7 @@
 							<h3 class="hero__description-text">натуральные бургеры</h3>
 						</div>
 					</div>
-					<div class="hero__arrow-scroll">
+					<div id="menu3" class="hero__arrow-scroll">
 						<a href="#two" class="arrow-scroll__link">
 							<svg  x="0px" y="0px"
 							width="11px" height="11px" viewBox="0 0 28.685 14.479" enable-background="new 0 0 28.685 14.479" xml:space="preserve">
@@ -62,7 +63,7 @@
 					<div class="hidden-menu">
 						<a class="header__logo logo" href="index.html">
 						</a>
-						<ul class="nav__list">
+						<ul class="nav__list" id="menu2">
 							<li class="nav__item"><a href="#two" class="nav__link">о нас</a></li>
 							<li class="nav__item"><a href="#three" class="nav__link">бургеры</a></li>
 							<li class="nav__item"><a href="#four" class="nav__link">команда</a></li>
@@ -758,14 +759,14 @@
 		</div>
 	</div>
 	<div class="nav-bar">
-		<ul class="nav-bar__list">
+		<ul class="onepage-pagination">
 			<li class="nav-bar__item"><a  class="nav-bar__link" href="#one"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link" href="#two"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link" href="#three"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link" href="#four"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link" href="#five"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link" href="#six"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link" href="#seven"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
+			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
 			<li class="nav-bar__item"><a  class="nav-bar__link" href="#eight"></a></li>
 		</ul>
 	</div>

@@ -1,5 +1,4 @@
 * {
-    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 label, button {
@@ -16,6 +15,7 @@ button {
     .main-content {
         height: 100%;
         width: 100%;
+        position: relative;
         .section {
             width: 100%;
             height: 100vh;
@@ -53,27 +53,6 @@ button {
     }
 }
 
-.nav-bar {
-	color: white;
-	position: fixed;
-	right: rem(50px);
-	top: rem(90px);
-    z-index: 999;
-}
-.nav-bar__link {
-	margin-bottom: rem(1px);
-	background: url(../img/icons/el.png) center no-repeat;
-	list-style-type: none;
-	width: rem(20px);
-    height: rem(20px);
-    display: block;
-    &:hover {
-        background: url(../img/icons/el2.png) center no-repeat; 
-    }
-}
-.nav-bar__link--active {
-	background: url(../img/icons/el2.png) center no-repeat;
-}
 .overlay {
     position: fixed;
     top: 0;
@@ -134,3 +113,40 @@ button {
           transform: rotate(45deg);
           border-radius: 100px;
 }
+.onepage-pagination {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .onepage-pagination li {
+    padding: 0;
+    text-align: center;
+  }
+  .onepage-pagination li a{
+    padding: 10px;
+    width: 4px;
+    height: 4px;
+    display: block;
+    
+  }
+  .onepage-pagination li a:before{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url(../img/icons/el.png) center no-repeat;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  }
+  
+  .onepage-pagination li a.active:before{
+    width: 18px;
+    height: 18px;
+    background: url(../img/icons/el2.png) center no-repeat;
+    background-size: cover;
+  }

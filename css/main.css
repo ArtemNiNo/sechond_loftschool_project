@@ -58,7 +58,8 @@ h1, h2, h3, h4, h5 {
 
 body, html {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -86,7 +87,6 @@ ul {
   overflow: hidden; }
 
 * {
-  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -103,7 +103,8 @@ button {
   position: relative; }
   .wrapper .main-content {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     .wrapper .main-content .section {
       width: 100%;
       height: 100vh;
@@ -136,26 +137,6 @@ button {
   text-transform: uppercase; }
   .order-link:hover {
     background-color: #ab3717; }
-
-.nav-bar {
-  color: white;
-  position: fixed;
-  right: 3.125rem;
-  top: 5.625rem;
-  z-index: 999; }
-
-.nav-bar__link {
-  margin-bottom: 0.0625rem;
-  background: url(../img/icons/el.png) center no-repeat;
-  list-style-type: none;
-  width: 1.25rem;
-  height: 1.25rem;
-  display: block; }
-  .nav-bar__link:hover {
-    background: url(../img/icons/el2.png) center no-repeat; }
-
-.nav-bar__link--active {
-  background: url(../img/icons/el2.png) center no-repeat; }
 
 .overlay {
   position: fixed;
@@ -226,6 +207,41 @@ button {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   border-radius: 100px; }
+
+.onepage-pagination {
+  position: fixed;
+  right: 5%;
+  top: 5%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.onepage-pagination li {
+  padding: 0;
+  text-align: center; }
+
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block; }
+
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(../img/icons/el.png) center no-repeat;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+
+.onepage-pagination li a.active:before {
+  width: 18px;
+  height: 18px;
+  background: url(../img/icons/el2.png) center no-repeat;
+  background-size: cover; }
 
 .hero {
   padding-top: 0.3125rem;
@@ -866,7 +882,8 @@ button {
   justify-content: space-between;
   font-size: 0.8125rem;
   line-height: 1.9;
-  letter-spacing: 0.01875rem; }
+  letter-spacing: 0.01875rem;
+  position: absolute; }
   @media screen and (max-width: 480px) {
     .section--contacts__footer {
       -webkit-box-orient: vertical;
@@ -879,9 +896,6 @@ button {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
-  @media screen and (max-width: 768px) {
-    .section--contacts__footer {
-      bottom: -8.125rem; } }
 
 .footer__contact {
   margin-left: 0 auto; }
