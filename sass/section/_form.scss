@@ -12,6 +12,10 @@
         padding-right: rem(10px);
     }
 }
+.section__form .pp-tableCell{
+    align-items: center;
+}
+.pp-tableCell
 .section__title--form {
     text-align: center;
     @include phones {

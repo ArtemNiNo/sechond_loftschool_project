@@ -5,19 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Burgers</title>
 	<link rel="stylesheet" href="css/normolize.css">
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/jquery.pagepiling.css">
 	<link rel="icon" type="image/png" href="img/icons/logotip.png">
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery.onepage-scroll.min.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-	<script src="js/myMap.js"></script>
-	<script src="js/whereI.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="main-content">
-			<section class="section hero" data-index="1">
+		<div class="main-content" id="pagepiling">
+			<div class="section hero">
 				<h2 id="one" class="visually-hidden">Первая секция</h2>
 				<div class="container hero__container">
 					<header class="header">
@@ -26,17 +22,17 @@
 						<div class="header__menu">
 							<nav class="nav" id="menu">
 								<ul class="nav__list">
-									<li class="nav__item"><a href="#two" class="nav__link">о нас</a></li>
-									<li class="nav__item"><a href="#three" class="nav__link">бургеры</a></li>
-									<li class="nav__item"><a href="#four" class="nav__link">команда</a></li>
-									<li class="nav__item"><a href="#five" class="nav__link">меню</a></li>
-									<li class="nav__item"><a href="#six" class="nav__link">отзывы</a></li>
-									<li class="nav__item"><a href="#eight" class="nav__link">контакты</a></li>
+									<li class="nav__item"><a href="#2" class="nav__link">о нас</a></li>
+									<li class="nav__item"><a href="#3" class="nav__link">бургеры</a></li>
+									<li class="nav__item"><a href="#4" class="nav__link">команда</a></li>
+									<li class="nav__item"><a href="#5" class="nav__link">меню</a></li>
+									<li class="nav__item"><a href="#6" class="nav__link">отзывы</a></li>
+									<li class="nav__item"><a href="#7" class="nav__link">контакты</a></li>
 								</ul>
 							</nav>
 						</div>
 						<div class="header__btn">
-							<a class="order-link order-link--hero" href="#seven">заказать</a>
+							<a class="order-link order-link--hero" href="#7">заказать</a>
 						</div>
 						<a class="header__burger-menu">
 							<div><div class="menu icon"></div></div>
@@ -64,20 +60,20 @@
 						<a class="header__logo logo" href="index.html">
 						</a>
 						<ul class="nav__list" id="menu2">
-							<li class="nav__item"><a href="#two" class="nav__link">о нас</a></li>
-							<li class="nav__item"><a href="#three" class="nav__link">бургеры</a></li>
-							<li class="nav__item"><a href="#four" class="nav__link">команда</a></li>
-							<li class="nav__item"><a href="#five" class="nav__link">меню</a></li>
-							<li class="nav__item"><a href="#six" class="nav__link">отзывы</a></li>
-							<li class="nav__item"><a href="#eight" class="nav__link">контакты</a></li>
+							<li class="nav__item"><a href="#2" class="nav__link">о нас</a></li>
+							<li class="nav__item"><a href="#3" class="nav__link">бургеры</a></li>
+							<li class="nav__item"><a href="#4" class="nav__link">команда</a></li>
+							<li class="nav__item"><a href="#5" class="nav__link">меню</a></li>
+							<li class="nav__item"><a href="#6" class="nav__link">отзывы</a></li>
+							<li class="nav__item"><a href="#7" class="nav__link">контакты</a></li>
 						</ul>
 						<a class="cross">
 							<div class="close icon"></div>
 						</a>
 					</div>	
 				</div>
-			</section>
-			<section id="two" class="section section--best">
+			</div>
+			<div class="section section--best">
 				<div class="best__container">
 					<h2 class="best__caption">мы лучшие</h2>
 					<ul class="best__features">
@@ -101,8 +97,8 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-			<section id="three" class="section section__slider">
+			</div>
+			<div class="section section__slider">
 				<div class="slider__container">
 					<div class="slider__arrow">
 						<a class="arrow__left">
@@ -515,8 +511,8 @@
 						</a>
 					</div>
 				</div>
-			</section>
-			<section id="four" class="section section--comand">
+			</div>
+			<div class="section section--comand">
 				<div class="comand__right-content">
 					<div class="comand__continer">
 						<h2 class="section__title section__title--comand">Команда</h2>
@@ -580,8 +576,8 @@
 								</ul>
 							</div>
 						</div>
-			</section>
-			<section id="five" class="section section__menu">
+					</div>
+			<div id="five" class="section section__menu">
 				<h2 class="section__title section__title--menu">Меню</h2>
 				<ul class="menu__right">
 					<li class="menu__content">
@@ -600,8 +596,8 @@
 						Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</div>
 					</li>
 				</ul>
-			</section>
-			<section id="six" class="section section--comment">
+			</div>
+			<div id="six" class="section section--comment">
 					<div class="comment__comments">
 						<h2 class="comments__caption">
 							Анна Генриета
@@ -658,8 +654,8 @@
 						<div class="comments__comment-text">Los pensamientos son sobre ellos y sobre ellos, sobre ellos y sobre ellos. No puedes resistir, no puedes olvidar ... Nunca pensé que los bollos pueden ser tan suaves, la albóndiga es tan jugosa, y el queso está tan derretido</div>
 						<a class="comments__button">подробнее</a>
 					</div>
-			</section>
-			<section id="seven" class="section section__form">
+				</div>
+			<div class="section section__form">
 				<div class="container form__container">
 						<h2 class="section__title section__title--form">закажите доставку</h2>
 						<form class="form">
@@ -718,8 +714,8 @@
 							</div>
 						</form>
 				</div>
-			</section>
-			<section class="section section--contacts">
+			</div>
+			<div class="section section--contacts">
 					<div id="map">
 					</div>
 					<footer class="section--contacts__footer">
@@ -755,20 +751,8 @@
 						</div>
 						<h2 id="eight" class="visually-hidden">Восьмая секция</h2>
 					</footer>
-			</section>
+				</div>
 		</div>
-	</div>
-	<div class="nav-bar">
-		<ul class="onepage-pagination">
-			<li class="nav-bar__item"><a  class="nav-bar__link" href="#one"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link"></a></li>
-			<li class="nav-bar__item"><a  class="nav-bar__link" href="#eight"></a></li>
-		</ul>
 	</div>
 	<div hidden>
 		<svg>
@@ -1846,6 +1830,11 @@
 			</g>
 		</svg>
 	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.pagepiling.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/myMap.js"></script>
+	<script src="js/whereI.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

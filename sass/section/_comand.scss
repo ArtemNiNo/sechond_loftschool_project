@@ -2,8 +2,6 @@
     background: url(../img/bg/bg4.jpg) 50% 0 no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;
-    justify-content: flex-end;
 }
 .comand__right-content {
     position: relative;
@@ -17,6 +15,9 @@
     padding-left: rem(100px);
     padding-right: rem(80px);
     padding-top: rem(110px);
+    position: absolute;
+    right: 0%;
+    top: 0;
     @include tablets {
         width: 100%;
         text-align: center;

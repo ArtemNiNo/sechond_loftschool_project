@@ -243,6 +243,40 @@ button {
   background: url(../img/icons/el2.png) center no-repeat;
   background-size: cover; }
 
+.onepage-paginationZ {
+  right: 50%;
+  top: 5%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.onepage-pagination li {
+  padding: 0;
+  text-align: center; }
+
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block; }
+
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(../img/icons/el.png) center no-repeat;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+
+.onepage-pagination li a.active:before {
+  width: 18px;
+  height: 18px;
+  background: url(../img/icons/el2.png) center no-repeat;
+  background-size: cover; }
+
 .hero {
   padding-top: 0.3125rem;
   background: url(../img/bg/bg1.jpg) center no-repeat;
@@ -696,11 +730,17 @@ button {
   height: 100%;
   margin: 0 auto;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-wrap: wrap; }
+
+.section--comment .pp-tableCell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .comment__comments {
   position: relative;
@@ -709,7 +749,7 @@ button {
   box-sizing: border-box;
   background: gray;
   width: 25%;
-  height: 50%;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,7 +768,7 @@ button {
   @media screen and (max-width: 768px) {
     .comment__comments {
       width: 50%;
-      height: 25%;
+      height: 25vh;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -943,13 +983,7 @@ button {
 .section--comand {
   background: url(../img/bg/bg4.jpg) 50% 0 no-repeat;
   background-size: cover;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+  position: relative; }
 
 .comand__right-content {
   position: relative;
@@ -966,7 +1000,10 @@ button {
   background-color: rgba(47, 50, 52, 0.9);
   padding-left: 6.25rem;
   padding-right: 5rem;
-  padding-top: 6.875rem; }
+  padding-top: 6.875rem;
+  position: absolute;
+  right: 0%;
+  top: 0; }
   @media screen and (max-width: 768px) {
     .comand__right-content {
       width: 100%;
@@ -1494,6 +1531,10 @@ button {
   @media screen and (max-width: 480px) {
     .slider__img {
       width: 21.875rem; } }
+  @media screen and (max-width: 320px) {
+    .slider__img {
+      width: 17.5rem;
+      margin-bottom: 0rem; } }
 
 .slider__left {
   position: relative; }
@@ -1535,6 +1576,11 @@ button {
   @media screen and (max-width: 480px) {
     .slider__composition {
       left: -1.875rem; } }
+  @media screen and (max-width: 320px) {
+    .slider__composition {
+      width: 5rem;
+      height: 5rem;
+      top: -3.75rem; } }
 
 .slider__composition span {
   font-family: 'gagalinregular'; }
@@ -1619,7 +1665,29 @@ button {
   position: relative; }
   @media screen and (max-width: 768px) {
     .slider__box {
-      padding-left: 16%; } }
+      overflow: hidden;
+      margin-left: 15%; } }
+  @media screen and (max-width: 480px) {
+    .slider__box {
+      width: 400px;
+      overflow: hidden;
+      padding-left: 16%;
+      margin-left: 0;
+      padding-right: 130px; } }
+  @media screen and (max-width: 414px) {
+    .slider__box {
+      overflow: hidden;
+      margin-left: 0;
+      padding-left: 16%;
+      width: 360px; } }
+  @media screen and (max-width: 320px) {
+    .slider__box {
+      overflow: hidden;
+      margin-left: 0;
+      padding-left: 18%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 280px; } }
 
 .slider__arrow {
   cursor: pointer; }
@@ -1642,10 +1710,75 @@ button {
     .slider__content {
       left: 0;
       margin-right: 12.5rem; } }
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 320px) {
     .slider__content {
       left: -20px;
       margin-right: 12.5rem; } }
+
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+  background: url(../img/icons/el2.png) center no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    #pp-nav li .active span,
+    .pp-slidesNav .active span {
+      display: none; } }
+
+#pp-nav span,
+.pp-slidesNav span {
+  top: 4px;
+  left: 4px;
+  width: 18px;
+  height: 18px;
+  background: url(../img/icons/el.png) center no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1; }
+  @media screen and (max-width: 768px) {
+    #pp-nav span,
+    .pp-slidesNav span {
+      display: none; } }
+
+#pp-nav ul,
+.pp-slidesNav ul {
+  margin: 0;
+  padding: 0; }
+  @media screen and (max-width: 768px) {
+    #pp-nav ul,
+    .pp-slidesNav ul {
+      display: none; } }
+
+#pp-nav li,
+.pp-slidesNav li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    #pp-nav li,
+    .pp-slidesNav li {
+      display: none; } }
+
+.pp-slidesNav li {
+  display: inline-block; }
+  @media screen and (max-width: 768px) {
+    .pp-slidesNav li {
+      display: none; } }
+
+#pp-nav li a,
+.pp-slidesNav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    #pp-nav li a,
+    .pp-slidesNav li a {
+      display: none; } }
 
 .section__form {
   background: url(../img/bg/bg7.jpg) center no-repeat;
@@ -1668,10 +1801,17 @@ button {
       padding-left: 2.1875rem;
       padding-right: 0.625rem; } }
 
+.section__form .pp-tableCell {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.pp-tableCell
 .section__title--form {
   text-align: center; }
   @media screen and (max-width: 480px) {
-    .section__title--form {
+    .pp-tableCell
+.section__title--form {
       font-size: 3.5rem; } }
 
 .form {
