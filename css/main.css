@@ -1694,7 +1694,7 @@ button {
 
 .slider__content {
   position: relative;
-  margin-right: 3.125rem;
+  margin-right: 6.25rem;
   left: 3.125rem;
   -webkit-transition: .3s;
   -o-transition: .3s;

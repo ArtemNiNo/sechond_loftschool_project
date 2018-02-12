@@ -72,7 +72,7 @@ arrowRight.addEventListener('click', function() {
             slider[i].style.left = 40 + 'px';
         }
         if (currentPosition > -slide * 4 && parseInt(getComputedStyle(document.body).width) > 768) {
-            slider[i].style.left = currentPosition - slide + -60 + 'px';
+            slider[i].style.left = currentPosition - slide + -100 + 'px';
             console.log(currentPosition);
         }
         else if (currentPosition <= 824 && parseInt(getComputedStyle(document.body).width) > 768) {
@@ -105,11 +105,11 @@ arrowLeft.addEventListener('click', function() {
             slider[i].style.left = -slide*5 + -280 + "px";
         }
         if (parseInt(getComputedStyle(document.body).width) > 768 && currentPosition < 50) {
-            slider[i].style.left = currentPosition + slide + 60 + 'px';
+            slider[i].style.left = currentPosition + slide + 100 + 'px';
             console.log(currentPosition);
         }
         else if (currentPosition <= 50 && parseInt(getComputedStyle(document.body).width) > 768) {
-            slider[i].style.left = -slide*4 + -190 + "px";
+            slider[i].style.left = -slide*4 + -330 + "px";
         }
     }
 });
