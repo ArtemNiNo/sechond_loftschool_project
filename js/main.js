@@ -1,26 +1,26 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 // Акордеоны
-const comandItem = document.getElementsByClassName('comand__item'),
-      numComandItem = comandItem.length,
-      menuContent = document.getElementsByClassName('menu__content'),
-      numMenuContent = menuContent.length;
- function ac (a, b, c) {
-    for (var i = 0; i < b; i++) {
-        a[i].addEventListener('click', function() {
-            if(!(this.classList.contains(c))) {
-                for(var i = 0; i < b; i++) {
-                    a[i].classList.remove(c);
-                }
-            this.classList.add(c); 
-            }
-        })
-    }
+
+const teamItems = document.querySelectorAll('.comand__item');
+const burgersItems = document.querySelectorAll('.menu__content');
+
+function ac (menuList, activeClassList) {
+  menuList.forEach((item) => {
+    item.addEventListener('click', (e) =>{
+      e.preventDefault();
+      menuList.forEach((item) => {
+         if (e.currentTarget != item) {
+          item.classList.remove(activeClassList);
+         }
+        });
+      item.classList.toggle(activeClassList);
+      });  
+  });
 }
-ac(menuContent, numMenuContent, 'menu__content--active');
-ac(comandItem, numComandItem, 'comand__item--active');
 
-
+ac(teamItems, 'comand__item--active');
+ac(burgersItems, 'menu__content--active');
 ///////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////
 // Выпадашка на hero

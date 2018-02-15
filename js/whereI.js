@@ -1,11 +1,41 @@
 ymaps.ready(init);
 var myMap;
+var coords = [
+  [59.961368, 30.288778],
+  [59.913992, 30.302168],
+  [59.944665, 30.373579],
+];
 
 function init(){     
-    myMap = new ymaps.Map("map", {
-        center: [56.3142945, 43.990551900000014],
-        zoom: 12
+  myMap = new ymaps.Map("map", {
+    center: [59.941392, 30.293756],
+    zoom: 12,
+    controls: ['zoomControl']
+  });  
+  myMap.behaviors.disable('scrollZoom');
+
+  var placemarks = createPlacemarks(coords);
+
+  placemarks.forEach((placemark) => {
+    myMap.geoObjects.add(placemark);
+  });
+
+  function createPlacemarks(array) {
+    let placemarks = [];
+  
+    array.forEach((coord) => {
+      let oneMark = new ymaps.Placemark([coord[0], coord[1]], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/icons/map-marker.svg',
+        iconImageSize: [46, 57],
+        iconImageOffset: [0, 0]
+      });  
+      placemarks.push(oneMark);
     });
-    myPlacemark = new ymaps.Placemark([56.3142945, 43.990551900000014], { hintContent: 'Нижний Новгород!', balloonContent: 'Примерно где-то тут живет самый криворукий ученик loftschool' });
-    myMap.geoObjects.add(myPlacemark);
+  
+    return placemarks;
+  }
+  
 }
+
+
