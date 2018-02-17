@@ -45,15 +45,15 @@ button {
     text-decoration: none;
     font-size: rem(13px);
     line-height: 1.42;
-    text-transform: uppercase;
     transition: .5s;
     text-transform: uppercase;
+    font-family: 'ubuntumedium';
     &:hover {
         background-color: darken($orange, 14%);
     }
 }
 
-.overlay {
+.overlay, .form-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -67,7 +67,16 @@ button {
     opacity: 0;
     transition: .3s;
 }
-.overlay__content  {
+.form-overlay {
+    display: none;
+    background: rgba(47, 50, 52, .9);
+}
+.form-overlay__content .order-link{
+    margin-top: rem(20px);
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.overlay__content, .form-overlay__content  {
     max-width: rem(460px);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .9);
@@ -75,6 +84,12 @@ button {
     font-size: rem(14px);
     font-family: 'ubuntulight';
     position: relative;
+}
+.form-overlay__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: rem(20px);
 }
 .overlay__name {
     font-size: rem(14px);

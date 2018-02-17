@@ -130,15 +130,15 @@ button {
   text-decoration: none;
   font-size: 0.8125rem;
   line-height: 1.42;
-  text-transform: uppercase;
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'ubuntumedium'; }
   .order-link:hover {
     background-color: #ab3717; }
 
-.overlay {
+.overlay, .form-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -160,7 +160,16 @@ button {
   -o-transition: .3s;
   transition: .3s; }
 
-.overlay__content {
+.form-overlay {
+  display: none;
+  background: rgba(47, 50, 52, 0.9); }
+
+.form-overlay__content .order-link {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  cursor: pointer; }
+
+.overlay__content, .form-overlay__content {
   max-width: 28.75rem;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -168,6 +177,19 @@ button {
   font-size: 0.875rem;
   font-family: 'ubuntulight';
   position: relative; }
+
+.form-overlay__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 1.25rem; }
 
 .overlay__name {
   font-size: 0.875rem;

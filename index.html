@@ -32,7 +32,7 @@
 							</nav>
 						</div>
 						<div class="header__btn">
-							<a class="order-link order-link--hero" href="#7">заказать</a>
+							v
 						</div>
 						<a class="header__burger-menu">
 							<div><div class="menu icon"></div></div>
@@ -658,54 +658,54 @@
 			<div class="section section__form">
 				<div class="container form__container">
 						<h2 class="section__title section__title--form">закажите доставку</h2>
-						<form class="form">
+						<form id="form" action="form.php" method="post" class="form">
 							<div class="form__input">
 								<div class="input__name-phone">
 									<label class="input__label input__label--name" for="name">
 										Имя
-										<input id="name" required="required" class="input__name" type="text">
+										<input id="name" name="name" required="required" class="input__name" type="text">
 									</label> 
 									<label class="input__label input__label--name" for="form-phone">
 										Телефон
-										<input id="form-phone" required="required" class="input__name" type="text">
+										<input id="form-phone" name="phone" required="required" class="input__name" type="text">
 									</label> 
 								</div>
 								<div class="input__street">
 									<label class="input__label" for="street">
 										Улица
-										<input id="street" required="required" class="street__input" type="text">
+										<input id="street" name="street" required="required" class="street__input" type="text">
 									</label>
 								</div>
 								<div class="input__home">
 									<label class="input__label" for="home">
 										Дом
-										<input id="home" required="required" class="home__input" type="text">
+										<input id="home" name="home" required="required" class="home__input" type="text">
 									</label>
 									<label class="input__label" for="house-block">
 										Корпус
-										<input id="house-block" required="required"  class="home__input" type="text">
+										<input id="house-block" name="house-block" class="home__input" type="text">
 									</label>
 									<label class="input__label" for="apartament">
 										Квартира
-										<input id="apartament" required="required" class="home__input" type="text">
+										<input id="apartament" name="apartament" required="required" class="home__input" type="text">
 									</label>
 									<label class="input__label" for="floor">
 										Этаж
-										<input id="floor" required="required" class="home__input" type="text">
+										<input id="floor" name="floor" required="required" class="home__input" type="text">
 									</label>			
 								</div>
 							</div>
 							<div class="form__comment">
 								<label class="input__label" for="comment">
 									Комментарий
-									<textarea id="comment" class="comment__text" required="required"></textarea>
+									<textarea id="comment" name="comment" class="comment__text" required="required"></textarea>
 								</label>
 								<div class="form__radio">
-									<input checked="checked" class="radio__radiobutton" type="radio" id="radio-One"><label class="form__label" for="radio-One">Потребуется сдача</label>
-									<input class="radio__radiobutton" type="radio" id="radio-Two"><label class="form__label" for="radio-Two">Оплата по карте</label>
+									<input class="radio__radiobutton" type="radio" name="pay-option" value="Потребуется сдача." id="radio-One" ><label class="form__label" for="radio-One">Потребуется сдача</label>
+									<input class="radio__radiobutton" type="radio" name="pay-option" value="Оплата по карте" id="radio-Two"><label class="form__label" for="radio-Two">Оплата по карте</label>
 								</div>
 								<div class="form__check">
-									<input class="check__checkbox" type="checkbox" id="check-One"><label for="check-One" class="form__label--checkbox">Не перезванивать</label>
+									<input name="dont-disturb" value="1" class="check__checkbox" type="checkbox" id="check-One"><label for="check-One" class="form__label--checkbox">Не перезванивать</label>
 								</div>
 								<div class="form__button">
 									<button type="submit" class="order-link form__order-link">Заказать</button>
@@ -752,6 +752,12 @@
 						<h2 id="eight" class="visually-hidden">Восьмая секция</h2>
 					</footer>
 				</div>
+		</div>
+	</div>
+	<div class="form-overlay">
+		<div class="form-overlay__content">
+			<div class="form-overlay__text">Сообщение отправлено</div>
+			<a class="order-link">закрыть</a>
 		</div>
 	</div>
 	<div hidden>

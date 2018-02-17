@@ -183,7 +183,6 @@ $(document).ready(function() {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['section1', 'section2', 'section3', 'section4']
         },
        	normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -198,3 +197,54 @@ $(document).ready(function() {
 		afterRender: function(){},
 	});
 });
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//Форма обратной связи
+
+$('#form').on('submit', submitForm);
+
+function submitForm (ev) {
+    ev.preventDefault();
+    
+    var form = $(ev.target),
+        data = form.serialize(),
+        url = form.attr('action'),
+        type = form.attr('method');
+
+    ajaxForm(form).done(function(msg) {
+        var mes = msg.mes,
+            formOverlay = document.querySelector('.form-overlay'),
+            formOverlayText = document.querySelector('.form-overlay__text')
+            mesText = document.querySelector('.form-overlay__content'),
+            status = msg.status;
+            formOverlay.addEventListener('click', function() {
+                    formOverlay.style.display = 'none';
+            })
+        if (status === 'OK') {
+            formOverlay.style.display = 'flex';
+            setTimeout(function(){
+                formOverlay.style.opacity = '1';
+                formOverlayText.textContent  = ''+ mes +'';
+            }, 1)
+        } else{
+            form.append('<p class="error">' + mes + '</p>');
+        }
+    }).fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+
+};
+
+// Универсальная функция для работы с формами
+var ajaxForm = function (form) {
+    var data = form.serialize(),
+        url = form.attr('action');
+    
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        dataType : 'JSON',
+        data: data
+    })
+};
