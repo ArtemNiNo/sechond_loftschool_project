@@ -25,7 +25,7 @@
             <li>Телефон: ' . $phone . '</li>
             <li>Адрес: ' . $street . ', ' . $home . ', ' . $house_block . ', ' . $floor . ', ' . $apartament . '</li>
             <li>Способ оплаты: ' . $pay . '</li>
-            <li>Комментарий к заказу: ' . $message . '</li>
+            <li>Комментарий к заказу: ' . $comment . '</li>
             <li>Нужно ли перезванивать клиенту: ' . $disturb . '</li>
         </ul>
     </body>
