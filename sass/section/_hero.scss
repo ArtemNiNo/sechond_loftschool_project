@@ -150,9 +150,7 @@
 }
 .order-link--hero {
     @include tablets {
-        position: absolute;
-        right: 10%;
-        top: 25%;
+        display: none;
     }
 }
 .hidden-menu {

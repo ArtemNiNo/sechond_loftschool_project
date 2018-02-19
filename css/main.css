@@ -484,9 +484,7 @@ button {
 
 @media screen and (max-width: 768px) {
   .order-link--hero {
-    position: absolute;
-    right: 10%;
-    top: 25%; } }
+    display: none; } }
 
 .hidden-menu {
   height: 0;
@@ -1388,8 +1386,11 @@ button {
   position: relative;
   font-weight: 100;
   text-align: right;
-  top: 620px;
+  top: 38.75rem;
   cursor: pointer; }
+  @media screen and (max-height: 694px) {
+    .menu__title {
+      top: 30rem; } }
   @media screen and (max-width: 480px) {
     .menu__title {
       top: 32.5rem; } }

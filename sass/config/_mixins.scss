@@ -25,6 +25,11 @@
         @content;
     }
 }
+@mixin smolHigth {
+    @media screen and (max-height: 694px) {
+        @content;
+    }
+}
 @function rem($px) {
     @return $px / 16px + 0rem;
 }

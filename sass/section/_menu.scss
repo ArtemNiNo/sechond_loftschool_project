@@ -137,8 +137,11 @@
     position: relative;
     font-weight: 100;
     text-align: right;
-    top: 620px;
+    top: rem(620px);
     cursor: pointer;
+    @include smolHigth  {
+        top: rem(480px);
+    }
     @include phones {
         top: rem(520px);
     }
